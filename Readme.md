@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Vladimir Vodjanoj](https://up.htmlacademy.ru/htmlcss/17/user/261981).
-* Наставник: `Неизвестно`.
+* Студент: [Vladimir Vodjanoj](https://up.htmlacademy.ru/htmlcss/15/user/261981).
+* Наставник: `Владислав Балабанович`.
 
 ---
 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  	<head>
+    	<meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+    	<title>Нёрдс</title>
+  	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+                <div class="main-header-top clearfix">
+				    <div class="index-logo">
+					   <img src="img/main-logo.png" width="161" height="65" alt="Нердс">
+				    </div>
+				    <nav class="main-navigation">
+					    <ul>
+					        <li>
+						       <a href="#">Студия</a>
+						    </li>
+						    <li>
+							    <a href="#">Клиенты</a>
+						    </li>
+						    <li>
+							    <a href="#">Магазин</a>
+						    </li>
+						    <li>
+							    <a href="#">Контакты</a>
+						    </li>
+                        </ul>
+ 				   </nav>
+ 				   <div class="user-block">
+                        <img src="img/icon-basket.png" width="15" height="15" alt="Корзина">
+ 					    <a class="shopping-cart" href="#">Корзина</a>
+                    </div>
+                </div>
+                <div class="header-title">
+				    <h1>Магазин готовых шаблонов</h1>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="main-content-block clearfix">
+                <div class="products-filtr">
+                    <form action="#" method="get">
+                        <div class="filter-price">
+                            <h2>Стоимость:</h2>
+                            <div class="scale-price">
+                                <div class="progress">
+                                </div>
+                                <div class="left-slider">
+			                    </div>
+                                <div class="right-slider">
+                                </div>
+                            </div>   
+                            <div class="set-price">
+                                <div class="set-price-from">
+                                    <label for="price-from">От</label>
+                                    <input id="price-from" type="text" name="min-price">
+                                </div>
+                                <div class="set-price-to">
+                                    <label for="price-to">До</label>
+                                    <input id="price-to" type="text" name="max-price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="html-arrangement-type">
+                            <h2>Сетка:</h2>
+                            <div class="arrangement-type">
+                                <label for="arrangement-type-responsive">Адаптивная</label>
+                                <input type="radio" id="arrangement-type-responsive" name="arrangement-type-item" value="responsive" checked>
+                            </div>
+                            <div class="arrangement-type">
+                                <label for="arrangement-type-fixed">Фиксированная</label> 
+                                <input type="radio" id="arrangement-type-fixed" name="arrangement-type-item" value="fixed">
+                            </div>
+                            <div class="arrangement-type">
+                                <label for="arrangement-type-flexible">Резиновая</label>
+                                <input type="radio" id="arrangement-type-flexible" name="arrangement-type-item" value="flexible">
+                            </div>
+                        </div>
+                        <div class="product-features-container">
+                            <h2>Особенности:</h2>
+                            <div class="product-features-item">
+                                <input name="product-checking" id="product-feature-slider" type="checkbox">
+                                <label for="product-feature-slider">Слайдер</label><br>
+                            </div>
+                            <div class="product-features-item">
+                                <input name="product-checking" id="product-feature-adv" type="checkbox">
+                                <label for="product-feature-adv">Блок преимуществ</label><br>
+                            </div>
+                            <div class="product-features-item">
+                                <input name="product-checking" id="product-feature-news" type="checkbox">
+                                <label for="product-feature-news">Новости</label><br>
+                            </div>
+                            <div class="product-features-item">
+                                <input name="product-checking" id="product-feature-gallery" type="checkbox">
+                                <label for="product-feature-gallery">Галерея</label><br>
+                            </div>
+                            <div class="product-features-item">
+                                <input name="product-checking" id="product-feature-cart" type="checkbox">
+                                <label for="product-feature-cart">Корзина</label><br>
+                            </div>
+                        </div>
+                        <input class="btn" type="submit" value="Показать">
+                    </form>
+                </div>
+                <div class="company-portfolio">
+                    <div class="sorting-criteria">
+                        <div class="sorting-main-title">
+                            <h2>Сортировать</h2>
+                        </div>
+                        <div class="sorting-cretaria-options">
+                            <a class="btn-sorting">По цене</a>
+                            <a class="btn-sorting">По типу</a>
+                            <a class="btn-sorting">По названию</a>
+                            <span></span><!-- Для треугольника вниз --> 
+                            <span></span><!-- Для треугольника вверх --> 
+                        </div> 
+                    </div> 
+                <!-- Фоновые картинки зададим в CSS --> 
+                    <div class="company-portfolio-patterns clearfix">
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-hover">
+                                <span>Sedona</span>
+                                <p>Информационный сайт  для туристов</p>
+                                <button class="btn" type="button">9 900 РУБ</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-hover">
+                                <span>Названия макета</span>
+                                <p>Описание</p>
+                                <button class="btn" type="button">цена РУБ</button>
+                            </div>
+                        </div>
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-hover">
+                            <span>Названия макета</span>
+                            <p>Описание</p>
+                            <button class="btn" type="button">цена РУБ</button>
+                        </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-hover">
+                                <span>Названия макета</span>
+                                <p>Описание</p>
+                                <button class="btn" type="button">цена РУБ</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-hover">
+                                <span>Названия макета</span>
+                                <p>Описание</p>
+                                <button class="btn" type="button">цена РУБ</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-hover">
+                                <span>Названия макета</span>
+                                <p>Описание</p>
+                                <button class="btn" type="button">цена РУБ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-items-pages">
+                        <a class="btn-page" href="#">1</a>
+                        <a class="btn-page" href="#">2</a>
+                        <a class="btn-page" href="#">3</a>
+                        <a class="btn-page" href="#">Следующая</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="map"><!-- Фоновую картинку карты зададим в CSS --> 
+            <div class="container">  
+                <div class="contacts">
+                    <p><b>NЁRDS DESIGN STUDIO</b></p>
+                    191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+                    тел. +7 (812) 275-75-75<br>
+                    <a href="#" class="btn">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+		<footer class="main-footer">
+			<div class="container">
+				<section class="footer-social">
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <img src="img/vk-icon.png" width="26" height="15" alt="ВКонтакте">
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <img src="img/fb-icon.png" width="12" height="22" alt="Facebook">
+                    <a class="social-btn social-btn-inst" href="#">Инсытаграм</a>
+                    <img src="img/insta-icon.png" width="21" height="21" alt="Инсытаграм">
+                </section>	
+                <section class="slogan">
+                	<p><b>Давайте дружить, это выгодно!</b></p>
+                	<p>Скидка 10% для друзей из социальных сетей.</p>
+                </section>
+            </div>
+        </footer>
+    </body>
+</html>
+
+				 
