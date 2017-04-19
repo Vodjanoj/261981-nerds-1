@@ -52,7 +52,7 @@ box-sizing: border-box;
 .container {
 	width: 1180px;
 	padding: 0 10px;
-	background-color: #e0e097; 
+	 
 	margin:0 auto;
 }
 
@@ -438,9 +438,6 @@ box-sizing: border-box;
 	width:280px;
 	margin-top: 68px;
 	margin-bottom: 68px;
- 
-	 
-	background-color: #d9cfcf;
 }
 
 .social-btn {
