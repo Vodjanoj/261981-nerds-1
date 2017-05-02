@@ -1,24 +1,36 @@
 html, body {
-margin: 0;
-padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-font-size: 16px;
-line-height: 24px;
-color: #000000;
-background-color: #ffffff; 
-font-family: "PT Sans Narrow", "Arial",  sans-serif;
-font-weight: normal;
-min-width: 1200px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	background-color: #ffffff; 
+	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
+	font-weight: normal;
+	min-width: 1200px;
 }
 
-h1 {
-font-size: 55px;
-line-height: 55px;
-color: #000000;
-font-family: "Roboto Medium", Arial,  sans-serif;	
-font-weight: 500;
+.header-title h1 {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 108px;
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+	color: #000000;
+	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;	
+ }
+
+
+h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase; 
+	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
 }
 
 
@@ -39,7 +51,6 @@ box-sizing: border-box;
 }
  
 .main-header {
-    margin-bottom: 70px;
 	color: #000000; 
 	background-color: #eeeeee;
      
@@ -60,10 +71,10 @@ box-sizing: border-box;
 	display:block;
 	padding: 16px 0px;
 	width: 160px;
-	font-weight: 500;  
+	font-weight: 400;  
 	font-size: 16px;
    	line-height: 18px;
-	font-family: "Roboto Regular", "Arial",  sans-serif;
+	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
     color:#ffffff;
 	 
 	text-align: center; 
@@ -81,10 +92,7 @@ box-sizing: border-box;
 	float:left;
 	 
 
-	background:  url('../img/sprite1.png') no-repeat;
-	background-position: -28px -798px;
-
- /* Только для оформления сетки */
+ 
 	 
  	background-color: #eeeeee;
 }
@@ -165,20 +173,21 @@ box-sizing: border-box;
 	background-position: -30px -112px;
 }
 
+.company-advantages {
+	padding-top: 80px;
+	margin-bottom: 60px;
+	margin-left: -50px;
+    margin-right: -50px;
+	border-bottom: 2px solid #eeeeee;
+}
+
 .company-advantages-item {
 	width: 300px;
+	margin-left: 50px; 
+	margin-right: 50px; 
+	margin-bottom: 80px;
     float: left;
-    margin-right: 100px;
-}
-
-.company-advantages-item:last-child {
-	margin-right:0;
-}
-
-.company-advantages {
-	padding-bottom: 80px;
-	margin-bottom: 60px;
-	border-bottom: 2px solid #eeeeee;
+    
 }
 
 .company-advantages-title {
@@ -240,24 +249,52 @@ box-sizing: border-box;
 	display: block;
 	padding-top: 30px;
 	padding-left: 10px; 
-	margin-bottom: 30px;
+	margin-bottom: 41px;
 	text-transform: uppercase;
 	font-weight: 700; 
 }
 
-.company-guarantees {
-	display: inline-block;
-	vertical-align: top;
+.company-guarantees small {
+	font-size: 70%;
+}
+
+.development-advantages ul {
+	margin:0;
+	padding: 0;
+	margin-top: 24px;
+	list-style: none;
+
+}
+
+.development-advantages li {
+	display: block;
+	position: relative;
+	margin-bottom:25px;
+	padding-left: 35px;
+}
+
+.development-advantages li::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 10px;
+	left: 2px;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
 }
 
 .company-guarantees {
 	width: 105px;
 	margin-right: 8px;
+	display: inline-block;
+	vertical-align: top;
 }
+
 
 .company-guarantees-list b {
 	font-size: 45px;
-	line-height: 65px;
+	line-height: 45px;
 }
 
 .company-guarantees-list span {
@@ -274,11 +311,157 @@ box-sizing: border-box;
 }
 
 .company-presentation {
-	padding-bottom: 74px;
+	padding-bottom: 47px;
 	border-bottom: 2px solid #eeeeee;
 }
 
+.filter-price {
+	margin-bottom:55px;
+}
+
+.filter-price h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+.range-filter {
+	width: 260px;
+}
+
+.range-controls {
+	position: relative;
+	height: 80px;
+	margin-bottom: 15px;
+	padding: 0 20px;
+	background: #eeeeee;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.range-controls .scale {
+   margin-top: 39px;
+   height: 2px;
+   background: #d7dcde;
+}
+
+.range-controls .bar {
+	height: 2px;
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+    left: 20px;
+	width: 20px;
+	height: 20px; 
+	border: 8px solid white; 
+	background: #ababab;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+	left: 162px;
+}
+
+.price-controls input {
+	width: 80px;
+	padding: 6px 10px;
+	margin-left: 11px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background: #eeeeee; 
+    font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.price-controls .min-price {
+	margin-right: 34px;
+} 
+
+.html-arrangement-type h2 {
+	margin-bottom: 5px;
+}
+
+
+.arrangement-type {
+	margin-bottom: 8px;
+}
+
+.product-features-item {
+	margin-bottom: 8px;
+}
+
+.html-arrangement-type {
+	margin-bottom: 44px;
+}
+
+.product-features-container h2 {
+	margin-bottom: 7px;
+}
+
+.product-features-container {
+	margin-bottom: 46px;
+}
+
+.input[type="checkbox"],
+.input[type="radio"]{
+	display:none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+	content:"";
+	display: inline-block;
+	height: 32px;
+    width: 32px;
+    margin: 0 5px -7px 0;
+    background: url('../img/sprite1.png') no-repeat;
+}
+
+input[type="radio"]:checked + label::before {
+	background-position: -31px -1205px;
+}
+
+input[type="radio"] + label::before {
+	background-position: -31px -1148px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: -32px -1090px;
+}
+
+input[type="checkbox"] + label::before {
+	background-position: -32px -1018px;
+}
+
+.btn-products-filtr {
+	width: 260px;
+	color:#000000;
+	background-color: #eeeeee;
+}
+  
 .company-product-logos {
+	display: flex;
+	 
+	justify-content: space-around;
 	margin-top: 47px;
 	padding-bottom: 42px;
 	margin-bottom: 80px;
@@ -288,39 +471,23 @@ box-sizing: border-box;
 
 
 .company-product-logos-item {
-	display:inline-block;
-	width: 210px; 
+	 
+	width: 240px; 
 	height: 90px;
-	margin-right: 52px; 
-	margin-left:23px;
+	 
 	font-size: 0;
-	vertical-align: top;
+	 
 	text-decoration: none;
 
 
 	background: transparent url('../img/sprite1.png') no-repeat;
-	 
-	 
-
- }
-
-.company-product-logos-item:nth-child(2) {
-	margin-left:34px;
 }
 
-.company-product-logos-item:nth-child(3) {
-	margin-left:40px;
-}
-
-.company-product-logos-item:last-child {
-	margin-right:0;
-	margin-left: 40px; 
-}
-
+ 
 
  .htmlac {
  	position: relative;
- 	background-position: -20px -253px;
+ 	background-position: -25px -253px;
  }
 
  .htmlac::after {
@@ -337,14 +504,14 @@ box-sizing: border-box;
 
  .borod {
  	position: relative;
- 	background-position: -27px -396px;
+ 	background-position: -19px -396px;
 }
 
  .borod::after {
 	content: "";
 	position: absolute;
 	top: 17px;
-	left: 257px;
+	left: 264px;
 
 	display: block;
 	width: 2px;
@@ -354,14 +521,14 @@ box-sizing: border-box;
 
  .pink {
  	position: relative;
- 	background-position: -21px -525px;
+ 	background-position: 1px -525px;
  }
 
  .pink::after {
 	content: "";
 	position: absolute;
 	top: 17px;
-	left: 250px;
+	left: 273px;
 
 	display: block;
 	width: 2px;
@@ -370,7 +537,7 @@ box-sizing: border-box;
 }
 
  .mishka {
-   background-position: -21px -650px;
+   background-position: 18px -650px;
  }
 
 .map {
@@ -490,7 +657,6 @@ box-sizing: border-box;
 
 	/* Только для оформления сетки */
 	min-height: 840px;
-	background-color: #d9cfcf;
 }
 
 .company-portfolio {
@@ -529,8 +695,8 @@ box-sizing: border-box;
 
 .slider {
 	position:relative;
-	padding-top: 20px; 
-	height:442px;
+	/* нть высоту */ 
+	height: 432px;
 	margin: 0 auto;
 }
 
@@ -549,15 +715,14 @@ box-sizing: border-box;
 	height:10px;
 	margin-left:-100px;
 	text-align: center;
-	border:1px dotted green;
 	z-index: 1000;
 }
 
 /* Непонятно почему не подсвечивается элемент активный */
 .slider-controls label {
 	display:inline-block;
-	width:4px;
-	height:4px;
+	width: 10px;
+	height: 10px;
 	margin:0 3px;
 	background:white;
 	border:3px solid white;
@@ -577,9 +742,10 @@ box-sizing: border-box;
 	background: #c1c1c1;
 }
 
+
+
 .slide {
-	position:absolute;
-	margin-top: -10px;
+	position: absolute;
 	top:0;
 	left:0;
 	width:100%;
@@ -589,7 +755,7 @@ box-sizing: border-box;
 
 .slide-text {
 	width: 500px;
-	padding: 30px 0;
+	padding: 20px 0;
 	color: #283136;
 }
 
@@ -612,14 +778,14 @@ box-sizing: border-box;
 
  
 
-.btnsl {
+.btn-slide {
 	width: 240px;
 }
 
 .slide:nth-child(1) {
 	background-image:url('../img/slider-1.png');
 	background-repeat:no-repeat;
-	background-position: 100% 10px;
+	background-position: 100% 0; /*  поставил 0 px вместо 10px и вопрос решился, первый слайд на нужном месте*/
 }
 
 .slide:nth-child(2) {
@@ -636,6 +802,10 @@ box-sizing: border-box;
  
 .slide {
 	display:none;
+}
+
+.slides {
+	height: 100%;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
