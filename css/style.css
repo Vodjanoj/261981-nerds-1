@@ -462,6 +462,10 @@ input[type="checkbox"] + label::before {
 	float: left;
 }
 
+.sorting-criteria  {
+	margin-bottom: 41px;
+}
+
 .sorting-main-title h2 {
 	font-size: 18px;
 	line-height: 18px;
@@ -470,8 +474,37 @@ input[type="checkbox"] + label::before {
 }
 
 .sorting-cretaria-options {
+	position: relative;
 	width: 360px;
 	float: right;
+}
+
+.sorting-cretaria-options::after {
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: 350px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+}
+
+.sort-by-title {
+	position: relative;
+}
+
+.sort-by-title::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 153px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #000000;
 }
 
 .sorting-cretaria-options ul {
@@ -517,6 +550,11 @@ input[type="checkbox"] + label::before {
 	width: 14px;
 	height: 14px;
 	background-color: #ffffff;
+}
+
+.portfolio-item-image {
+	width: 360px;
+	height: 576px;
 }
   
 .company-product-logos {
@@ -728,7 +766,7 @@ input[type="checkbox"] + label::before {
 
 	/* Только для оформления сетки */
 	min-height: 2166px;
-	background-color: #d9cfcf;
+	  
 }
 
 .portfolio-item {
@@ -752,6 +790,64 @@ input[type="checkbox"] + label::before {
 /* Только для оформления сетки */
 	min-height: 1926px;
 	background-color: #fba7a9;
+}
+
+.portfolio-item-hover h2 {
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+
+.portfolio-item-hover p {
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+	width: 190px;
+	margin: 0 auto;
+	margin-bottom: 28px;
+}
+
+.pink-hover p {
+   display: block;	
+   width: 250px;
+}
+
+.btn-pattern-price {
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+
+.portfolio-item  {
+	position: relative;
+}
+
+.portfolio-item-hover  {
+  display: none;
+  width: 360px;
+  padding: 20px;
+  text-align: center;
+  background: #eeeeee;
+  position: absolute;
+  top: 385px;
+}
+
+
+.portfolio-item:hover .sedona-hover {
+	display: block;
+}
+
+.portfolio-item:hover .pink-hover {
+	display: block;
+}
+
+.portfolio-item:hover .barbershop-hover {
+	display: block;
 }
 
 .slider {
