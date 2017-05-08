@@ -86,16 +86,32 @@ box-sizing: border-box;
 	cursor: pointer;
 }
 
+ .btn:hover {
+	background: #e74246;
+}
+
+.btn:active { 
+   background-color: #d7373b; 
+   color: #e37376;
+   box-shadow: inset 0 3px 0px 0 #c13135;
+ }
+
 .index-logo {
 	width:165px;
 	height: 67px;
 	float:left;
-	 
-
- 
-	 
- 	background-color: #eeeeee;
+	background-color: #eeeeee;
+	cursor: pointer;
 }
+
+.index-logo img:hover {
+	opacity: 0.8;
+}
+
+.index-logo img:active {
+	opacity: 0.3;
+}
+
 
 .main-navigation {
 	width:500px;
@@ -103,7 +119,7 @@ box-sizing: border-box;
     margin-left: 195px;
 }
 
-.main-navigation ul {
+.main-navigation .main-navigation-items {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -129,9 +145,24 @@ box-sizing: border-box;
 	text-transform: uppercase;
  }
 
- .main-navigation a:hover {
-	border-bottom: 2px solid #fb565a;
+  .main-navigation a:hover {
+	color: #fb565a;
  }
+
+
+ .main-navigation a:active {
+	color: #a6a6a6;
+ }
+
+ .main-navigation .active-page {
+ 	border-bottom: 2px solid #fb565a;
+ }
+
+ .main-navigation .active-page:hover {
+ 	color: black;
+ }
+ 
+
 
 .user-block {
 	float:right;
@@ -153,11 +184,14 @@ box-sizing: border-box;
     text-transform: uppercase;
 }
 
-
-
-.shopping-cart:hover {
-	border-bottom: 2px solid #fb565a;
+ .shopping-cart:hover {
+	color: #fb565a;
  }
+.shopping-cart:active {
+	color: #a6a6a6;
+ }
+
+
 
 .shopping-cart::before {
 	content: "";
@@ -302,13 +336,41 @@ box-sizing: border-box;
 	line-height: 18px;
 }
 
+.btn-order-web {
+	background-color: #fb565a;
+}
+
 .btn-order-app {
 	background-color: #00ca74;
 }
 
+.btn-order-app:hover {
+	background: #00bc6c;
+}
+
+.btn-order-app:active { 
+   background-color: #00aa62; 
+   color: #4dc491;
+   box-shadow: inset 0 3px 0px 0 #009958;
+ }
+
 .btn-order-present {
 	background-color: #efc84a;
 }
+
+.btn-order-present:hover {
+	background: #eab534;
+}
+
+.btn-order-present:active { 
+   background-color: #e5a722; 
+   color: #edc265;
+   box-shadow: inset 0 3px 0px 0 #ce961f;
+ }
+
+ 
+
+ 
 
 .company-presentation {
 	padding-bottom: 47px;
@@ -422,8 +484,8 @@ input[type="checkbox"] + label,
 input[type="radio"] + label {
 	font-size: 16px;
 	line-height: 20px;
-	color: #000000;
-	cursor: pointer;
+	color: #283136;
+    cursor: pointer;
 }
 
 input[type="checkbox"] + label::before,
@@ -436,13 +498,18 @@ input[type="radio"] + label::before {
     background: url('../img/sprite1.png') no-repeat;
 }
 
+ 
+ 
 input[type="radio"]:checked + label::before {
 	background-position: -31px -1205px;
+	opacity: 0.1;
 }
 
 input[type="radio"] + label::before {
 	background-position: -31px -1148px;
+	opacity: 0.4;
 }
+
 
 input[type="checkbox"]:checked + label::before {
     background-position: -32px -1090px;
@@ -473,48 +540,76 @@ input[type="checkbox"] + label::before {
 	padding-top: 5px;
 }
 
-.sorting-cretaria-options {
-	position: relative;
-	width: 360px;
-	float: right;
+.sort-options {
+	display:inline-block;
 }
 
-.sorting-cretaria-options::after {
-	content: "";
-	position: absolute;
-	top: 25px;
-	left: 350px;
+.rectangle span {
+	display: block;
 	width: 0;
 	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid #cccccc;
-}
-
-.sort-by-title {
-	position: relative;
-}
-
-.sort-by-title::after {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 153px;
-	width: 0;
-	height: 0;
+	font-size: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid #000000;
 }
 
-.sorting-cretaria-options ul {
+.rectangleup span {
+	display: block;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+
+}
+
+.sorting-creteria-options {
+	width: 380px;
+	float: right;
+}
+
+.sorting-creteria-options-list {
+	float-left;
+	width: 300px;
+
+}
+
+.sorting-creteria-rectangles {
+	width: 43px;
+	float-right;
+	 
+}
+
+.updown-rectangle span {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #000000;
+
+}
+
+.downup-rectangle span {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cccccc;
+
+}
+
+.sorting-creteria-options ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-size: 0; /* Т.к li реализованы с помощью блочнострочных элементов */
 }
 
-.sorting-cretaria-options li {
+.sorting-creteria-options li {
     display: inline-block;
 	padding-left: 0;
     padding-right: 25px;
@@ -525,13 +620,15 @@ input[type="checkbox"] + label::before {
 	vertical-align: top;
 }
 
-.sorting-cretaria-options a {
+.sorting-creteria-options a {
 	display: block;
 	 
 	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
  }
+
+
 
 
 .top-decoration-pattern {
@@ -556,7 +653,57 @@ input[type="checkbox"] + label::before {
 	width: 360px;
 	height: 576px;
 }
-  
+
+
+.portfolio-items-pages {
+	width: 455px;
+}
+
+.portfolio-items-pages .btn-page {
+	display: inline-block;
+	margin-right: 8px;
+ 	
+	min-width: 50px;
+	height: 50px;
+	line-height: 44px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #000000;
+	background: #eeeeee;
+	text-decoration: none;
+	border: 3px solid #eeeeee;
+	border-radius: 3px;
+
+}
+
+.portfolio-items-pages .btn-page-next {
+	width: 260px;
+}
+ 
+   
+
+
+.portfolio-items-pages .btn-page-active {
+   background-color: #ffffff;  
+}
+
+ .btn-page:hover {
+	background: #dfdfdf;
+	border: 3px solid #dfdfdf;
+	border-radius: 3px;
+}
+
+ 
+.btn-page:active { 
+   background-color: #d5d5d5; 
+   color: #959595;
+   box-shadow: inset 0 3px 0px 0 #bfbfbf;
+   border: none;
+   line-height: 50px;  
+}
+ 
 .company-product-logos {
 	display: flex;
 	 
@@ -584,29 +731,49 @@ input[type="checkbox"] + label::before {
 
  
 
- .htmlac {
+ .htmlac-logo {
  	position: relative;
  	background-position: -25px -253px;
+ 	opacity: 0.2;
+ 	cursor: pointer;
  }
 
- .htmlac::after {
+ .htmlac-logo:hover {
+    opacity: 1;
+ }
+
+ .htmlac-logo:active {
+    opacity: 0.1;
+ } 
+
+
+ .htmlac-logo::after {
 	content: "";
 	position: absolute;
 	top: 17px;
 	left: 257px;
-
 	display: block;
 	width: 2px;
-	height: 52px;
+	height: 52px; 
 	background-color: #eeeeee;
 }
 
- .borod {
+ .borod-logo {
  	position: relative;
  	background-position: -19px -396px;
-}
+    opacity: 0.2;
+ 	cursor: pointer;
+ }
 
- .borod::after {
+ .borod-logo:hover {
+    opacity: 1;
+ }
+
+ .borod-logo:active {
+    opacity: 0.1;
+ }
+
+ .borod-logo::after {
 	content: "";
 	position: absolute;
 	top: 17px;
@@ -615,15 +782,25 @@ input[type="checkbox"] + label::before {
 	display: block;
 	width: 2px;
 	height: 52px;
-	background-color: #eeeeee;
+	background-color: black;
 }
 
- .pink {
+ .pink-logo {
  	position: relative;
  	background-position: 1px -525px;
+    opacity: 0.2;
+ 	cursor: pointer;
  }
 
- .pink::after {
+ .pink-logo:hover {
+    opacity: 1;
+ }
+
+ .pink-logo:active {
+    opacity: 0.1;
+}
+
+ .pink-logo::after {
 	content: "";
 	position: absolute;
 	top: 17px;
@@ -635,9 +812,19 @@ input[type="checkbox"] + label::before {
 	background-color: #eeeeee;
 }
 
- .mishka {
-   background-position: 18px -650px;
+ .mishka-logo {
+   	background-position: 18px -650px;
+   	opacity: 0.2;
+   	cursor: pointer;
  }
+
+ .mishka-logo:hover {
+   	opacity: 1;
+ }
+
+ .mishka-logo:active {
+    opacity: 0.1;
+}
 
 .map {
 	width: 1440px;
@@ -722,6 +909,17 @@ input[type="checkbox"] + label::before {
 	background-position: -1px -890px;
 }
 
+.social-btn-vk:hover {
+	background-color: #e74246;
+}
+
+
+.social-btn-vk:active { 
+   background-color: #d7373b; 
+   color: #edc265;
+   box-shadow: inset 0 3px 0px 0 #c13135;
+}
+
 .social-btn-fb {
 	background-position: 4px -1px;
 }
@@ -774,10 +972,6 @@ input[type="checkbox"] + label::before {
 	width:360px;
 	margin-right: 40px;
 	margin-bottom:36px;
-
-/* Только для оформления сетки */
-	min-height: 616px;
-	background-color: #99a18c;	
 }
 
 .portfolio-item:nth-child(2n) {
@@ -786,10 +980,7 @@ input[type="checkbox"] + label::before {
 
 .company-portfolio-patterns {
 	width:760px;
-
-/* Только для оформления сетки */
-	min-height: 1926px;
-	background-color: #fba7a9;
+	margin-bottom: 29px;
 }
 
 .portfolio-item-hover h2 {
@@ -975,4 +1166,106 @@ input[type="checkbox"] + label::before {
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
 	display:block;
+}
+
+.modal-content {
+	position: absolute;
+	top: 1703px;
+	left: 50%;
+	width: 960px;
+	margin-left: -480px;
+	padding: 68px 100px;
+	padding-bottom: 82px;
+	background-color: #ffffff;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7)
+}
+ 
+.modal-content-close {
+	position: absolute;
+	top: 75px;
+	right: 100px;
+	width: 22px;
+	height: 22px;
+	font-size:0 ;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+	content:"";
+	position: absolute;
+	width: 25px;
+	height: 5px;
+	background-color: #fecccd;
+	border-radius: 1px;
+}
+
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-content input {
+	display: block;
+}
+
+.modal-content textarea {
+	display: block;
+}
+
+.contactus-form-sender-name {
+	float: left;
+}
+
+.contactus-form-sender-email {
+	float: right;
+}
+
+.modal-content .model-content-title {
+	margin: 0;
+	margin-bottom: 38px;
+	font-size: 45px;
+	line-height: 45px;
+	text-transform: none;
+	font-weight: 500;
+}
+
+.modal-content label {
+	display: block;
+	margin: 0;
+	margin-bottom: 4px;
+	font-weight: 700;
+}
+
+.contactus-form input[type=text],
+.contactus-form textarea[type=text] {
+	width: 360px;
+	margin: 0;
+    padding: 11px 14px;
+	font: inherit;
+	color: #a1a1a1;
+	text-transform: none;
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+}
+
+.contactus-form-sender-contacts {
+	margin-bottom: 32px;
+}
+
+.contactus-form textarea[type=text] {
+	margin-bottom: 49px;
+	width: 760px;
+	height: 118px;
+	resize: none;
+}
+
+.btn-text-send {
+	width: 260px;
 }
