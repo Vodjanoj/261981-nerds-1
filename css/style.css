@@ -334,6 +334,7 @@ box-sizing: border-box;
 	font-size: 25px;
 	line-height: 25px;
 	font-weight: 700;
+	top: -0.6em;
 }
 
 .company-guarantees-list .company-guarantees-advantages {
@@ -468,6 +469,16 @@ box-sizing: border-box;
 	margin-bottom: 8px;
 }
 
+.btn-products-filtr:active {
+  	background-color: #d5d5d5; 
+	color: #959595;
+    box-shadow: inset 0 3px 0px 0 #bfbfbf;
+}	
+
+.btn-products-filtr:hover {
+  	background-color: #dfdfdf; 
+ }
+
 .html-arrangement-type {
 	margin-bottom: 44px;
 }
@@ -503,26 +514,93 @@ input[type="radio"] + label::before {
     background: url('../img/sprite1.png') no-repeat;
 }
 
- 
- 
-input[type="radio"]:checked + label::before {
-	background-position: -31px -1205px;
-	opacity: 0.1;
-}
-
 input[type="radio"] + label::before {
 	background-position: -31px -1148px;
 	opacity: 0.4;
 }
 
+input[type="radio"] + label:hover::before {
+	background-position: -31px -1148px;
+	opacity: 1;
+}
+
+input[type="radio"]:checked + label:hover::before {
+	background-position: -31px -1205px;
+	opacity: 1;
+}
+
+input[type="radio"]:checked + label:hover {
+	color: #000000;
+} 
+ 
+input[type="radio"]:checked + label::before {
+	background-position: -31px -1205px;
+	opacity: 0.4;
+}
+
+input[type="radio"]:disabled + label::before {
+	background-position: -31px -1205px;
+	opacity: 0.1;
+}
+
+input[type="radio"]:disabled + label {
+	color: #bec1c2;
+}
+
+input[type="radio"]:disabled + label:hover {
+	color: #bec1c2; 
+}
+
+input[type="radio"]:checked + label {
+	color: #283136;
+}
+
+input[type="radio"] + label:hover {
+	color: #000000;
+}
 
 input[type="checkbox"]:checked + label::before {
     background-position: -32px -1090px;
 }
 
+input[type="checkbox"]:checked + label:hover::before {
+    background-position: -32px -1090px;
+    opacity: 1;
+}
+
 input[type="checkbox"] + label::before {
 	background-position: -32px -1018px;
+	opacity: 0.4;
 }
+
+input[type="checkbox"] + label:hover::before {
+	background-position: -32px -1018px;
+	opacity: 1;
+}
+
+input[type="checkbox"]:checked + label {
+	background-position: -32px -1018px;
+	color: #bec1c2;
+}
+
+input[type="checkbox"]:checked + label {
+	color: #283136;
+}
+
+input[type="checkbox"]:disabled + label {
+	color: #bec1c2;
+}
+
+input[type="checkbox"]:disabled + label:hover::before {
+	background-position: -32px -1018px;
+	opacity: 0.1;
+}
+
+input[type="checkbox"]:disabled + label::before {
+	background-position: -32px -1018px;
+	opacity: 0.1;
+}
+
 
 .btn-products-filtr {
 	width: 260px;
@@ -547,10 +625,13 @@ input[type="checkbox"] + label::before {
 
 .sort-options {
 	display:inline-block;
+	vertical-align: middle;
 }
 
 .rectangle span {
 	display: block;
+	margin: 0;
+	padding: 0;
 	width: 0;
 	height: 0;
 	font-size: 0;
@@ -561,7 +642,7 @@ input[type="checkbox"] + label::before {
 
 .rectangleup span {
 	display: block;
-	margin-left: 10px;
+	margin-left: 30px;
 	padding-bottom: 10px;
 	width: 0;
 	height: 0;
@@ -569,8 +650,9 @@ input[type="checkbox"] + label::before {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 10px solid #cccccc;
-
 }
+
+
 
 .sorting-creteria-options {
 	width: 380px;
@@ -733,85 +815,93 @@ input[type="checkbox"] + label::before {
 
  
 
- .htmlac-logo {
- 	position: relative;
+.htmlac-logo {
  	background-position: -25px -253px;
  	opacity: 0.2;
  	cursor: pointer;
- }
+}
 
- .htmlac-logo:hover {
+.htmlac-logo:hover {
     opacity: 1;
- }
+}
 
- .htmlac-logo:active {
+.htmlac-logo:active {
     opacity: 0.1;
- } 
+} 
 
+.htmlac-separator {
+ 	position: relative;
+}
 
- .htmlac-logo::after {
+.htmlac-separator::after {
 	content: "";
 	position: absolute;
 	top: 17px;
-	left: 257px;
+	left: 258px;
 	display: block;
 	width: 2px;
 	height: 52px; 
 	background-color: #eeeeee;
 }
 
- .borod-logo {
- 	position: relative;
+.borod-logo {
  	background-position: -19px -396px;
     opacity: 0.2;
  	cursor: pointer;
- }
+}
 
- .borod-logo:hover {
+.borod-logo:hover {
     opacity: 1;
- }
+}
 
  .borod-logo:active {
     opacity: 0.1;
- }
+}
 
- .borod-logo::after {
+.borod-separator {
+ 	position: relative;
+}
+
+.borod-separator::after {
 	content: "";
 	position: absolute;
 	top: 17px;
 	left: 264px;
-
-	display: block;
-	width: 2px;
-	height: 52px;
-	background-color: black;
-}
-
- .pink-logo {
- 	position: relative;
- 	background-position: 1px -525px;
-    opacity: 0.2;
- 	cursor: pointer;
- }
-
- .pink-logo:hover {
-    opacity: 1;
- }
-
- .pink-logo:active {
-    opacity: 0.1;
-}
-
- .pink-logo::after {
-	content: "";
-	position: absolute;
-	top: 17px;
-	left: 273px;
-
 	display: block;
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
+}
+
+.pink-logo {
+ 	background-position: 1px -525px;
+    opacity: 0.2;
+ 	cursor: pointer;
+}
+
+.pink-logo:hover {
+    opacity: 1;
+}
+
+.pink-logo:active {
+    opacity: 0.1;
+}
+
+.pink-separator {
+	position: relative;
+}
+
+
+.pink-separator::after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 273px;
+    display: block;
+	width: 2px;
+	height: 52px;
+	background-color: #eeeeee;
+
 }
 
  .mishka-logo {
@@ -910,19 +1000,41 @@ input[type="checkbox"] + label::before {
 	background-color: #e74246;
 }
 
-
 .social-btn-vk:active { 
-   background-color: #d7373b; 
-   color: #edc265;
-   box-shadow: inset 0 3px 0px 0 #c13135;
+	background-color: #d7373b; 
+	color: #edc265;
+	box-shadow: inset 0 3px 0px 0 #c13135;
+	background-position: -6px -1264px;
 }
 
 .social-btn-fb {
 	background-position: 4px -1px;
 }
 
+.social-btn-fb:hover {
+	background-color: #e74246;
+}
+
+.social-btn-fb:active {
+	background-color: #d7373b; 
+	color: #edc265;
+	box-shadow: inset 0 3px 0px 0 #c13135;
+	background-position: -11px -1332px;
+}
+
 .social-btn-inst {
 	background-position: -2px -157px;
+}
+
+.social-btn-inst:hover {
+	background-color: #e74246;
+}
+
+.social-btn-inst:active {
+   	background-color: #d7373b; 
+  	color: #edc265;
+  	box-shadow: inset 0 3px 0px 0 #c13135;
+	background-position: -13px -1406px;
 }
 
 .slogan {
@@ -930,7 +1042,6 @@ input[type="checkbox"] + label::before {
 	margin-top: 61px;
 	width:660px;
 	margin-right:100px;
- 
 }
 
 .main-footer p b  {
@@ -1088,15 +1199,15 @@ input[type="checkbox"] + label::before {
 	z-index: 1000;
 }
 
-/* Непонятно почему не подсвечивается элемент активный */
 .slider-controls label {
 	display: inline-block;
+	position: relative;
 	width: 17px;
 	height: 17px;
 	margin: 0 8px;
 	margin-bottom: 15px;
 	background: white;
-	border: 3px solid white;
+	border: 5px solid white;
 	vertical-align: top;
 	border-radius: 50%;
 	cursor: pointer;
@@ -1107,6 +1218,22 @@ input[type="checkbox"] + label::before {
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
 
 	background: #c1c1c1;
+
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::before {
+     
+    position: absolute;
+	background: #ffffff;
+	left: 1px;
+	top: 1px;
+	width: 5px;
+	height: 5px;
+	display: block;
+	content:"";
+	border-radius: 50%;
 
 }
 .slider-controls .active {
