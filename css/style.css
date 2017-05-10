@@ -1254,17 +1254,17 @@ input[type="checkbox"]:disabled + label::before {
 	cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+.btn-1:checked ~ .slider-controls label[for="btn-1"],
+.btn-2:checked ~ .slider-controls label[for="btn-2"],
+.btn-3:checked ~ .slider-controls label[for="btn-3"] {
 
 	background: #c1c1c1;
 
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
-#btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
-#btn-3:checked ~ .slider-controls label[for="btn-3"]::before {
+.btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
+.btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
+.btn-3:checked ~ .slider-controls label[for="btn-3"]::before {
      
     position: absolute;
 	background: #ffffff;
@@ -1347,15 +1347,15 @@ input[type="checkbox"]:disabled + label::before {
 	height: 100%;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) {
+.btn-1:checked ~ .slides .slide:nth-child(1) {
 	display:block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) {
+.btn-2:checked ~ .slides .slide:nth-child(2) {
 	display:block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) {
+.btn-3:checked ~ .slides .slide:nth-child(3) {
 	display:block;
 }
 
@@ -1374,7 +1374,7 @@ input[type="checkbox"]:disabled + label::before {
 .modal-content-close {
 	position: absolute;
 	top: 75px;
-	right: 100px;
+	right: 90px;
 	width: 22px;
 	height: 22px;
 	font-size:0 ;
@@ -1396,6 +1396,8 @@ input[type="checkbox"]:disabled + label::before {
 .modal-content-close::after {
 	content:"";
 	position: absolute;
+	top: 8px;
+	left: 0px;
 	width: 25px;
 	height: 5px;
 	background-color: #fb565a;
@@ -1443,7 +1445,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .contactus-form input[type=text],
-.contactus-form textarea[type=text] {
+.contactus-form textarea {
 	width: 360px;
 	margin: 0;
     padding: 11px 14px;
@@ -1465,12 +1467,12 @@ input[type="checkbox"]:disabled + label::before {
     border-color: #b4b9bb;
 }
 
-.contactus-form textarea[type=text]:focus {
+.contactus-form textarea:focus {
     border-color: #000000;
     color: #000000;
 }
 
-.contactus-form textarea[type=text]:hover {
+.contactus-form textarea:hover {
     border-color: #b4b9bb;
 }
 
@@ -1478,7 +1480,7 @@ input[type="checkbox"]:disabled + label::before {
 	margin-bottom: 32px;
 }
 
-.contactus-form textarea[type=text] {
+.contactus-form textarea {
 	margin-bottom: 49px;
 	width: 760px;
 	height: 118px;
