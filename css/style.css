@@ -8,7 +8,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 	background-color: #ffffff; 
-	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
+	font-family: "Roboto", "Arial",  sans-serif;
 	font-weight: normal;
 	min-width: 1200px;
 }
@@ -22,30 +22,21 @@ body {
 	font-weight: 500;
 	text-align: center;
 	color: #000000;
-	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;	
+	font-family: "Roboto", "Arial",  sans-serif;	
  }
 
-h2 {
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: bold;
-	text-transform: uppercase; 
-	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
-}
-
-div {
-	display: block;
+html {
+	box-sizing: border-box;	
 }
 
 * {
-box-sizing: border-box;	
+	box-sizing: inherit;	
 }
 
 .clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
+ 	content: "";
+	display: table;
+ 	clear: both;
 }
  
 .main-header {
@@ -54,13 +45,12 @@ box-sizing: border-box;
 }
 
 .main-header-top {
-	padding-top: 45px;
+	padding-top: 47px;
 }
 
 .container {
 	width: 1180px;
 	padding: 0 10px;
-	 
 	margin:0 auto;
 }
 
@@ -71,9 +61,8 @@ box-sizing: border-box;
 	font-weight: 400;  
 	font-size: 16px;
    	line-height: 18px;
-	font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
-    color:#ffffff;
-	 
+	font-family: "Roboto", "Arial",  sans-serif;
+    color:#ffffff; 
 	text-align: center; 
 	text-transform: uppercase; 
 	text-decoration: none; 
@@ -83,14 +72,14 @@ box-sizing: border-box;
 	cursor: pointer;
 }
 
- .btn:hover {
+.btn:hover {
 	background: #e74246;
 }
 
 .btn:active { 
-   background-color: #d7373b; 
-   color: #e37376;
-   box-shadow: inset 0 3px 0px 0 #c13135;
+	background-color: #d7373b; 
+	color: #e37376;
+	box-shadow: inset 0 3px 0px 0 #c13135;
  }
 
 .index-logo {
@@ -109,24 +98,23 @@ box-sizing: border-box;
 	opacity: 0.3;
 }
 
-
 .main-navigation {
 	width:500px;
 	float:left;
-    margin-left: 195px;
+    margin-left: 196px;
 }
 
 .main-navigation .main-navigation-items {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-size: 0; /* Т.к li реализованы с помощью блочнострочных элементов */
+	font-size: 0;  
 }
 
 .main-navigation li {
 	display: inline-block;
 	padding-left: 0;
-    padding-right: 46px;
+    margin-right: 46px;
     padding-top: 28px;
     padding-bottom: 4px;  
     font-size: 16px;  
@@ -136,31 +124,28 @@ box-sizing: border-box;
 
 .main-navigation a {
 	display: block;
-	 
 	color: #000000;
+	padding-bottom: 3px;
 	text-decoration: none;
 	text-transform: uppercase;
- }
+}
 
-  .main-navigation a:hover {
+.main-navigation a:hover {
 	color: #fb565a;
- }
+}
 
-
- .main-navigation a:active {
+.main-navigation a:active {
 	color: #a6a6a6;
- }
+}
 
- .main-navigation .active-page {
+.main-navigation .active-page {
  	border-bottom: 2px solid #fb565a;
- }
+}
 
- .main-navigation .active-page:hover {
+.main-navigation .active-page:hover {
  	color: black;
- }
+}
  
-
-
 .user-block {
 	float:right;
     max-width:160px;
@@ -172,7 +157,6 @@ box-sizing: border-box;
 	padding-left: 40px;
     padding-right: 0;
     padding-top: 28px;
-    
     font-size: 16px;  
     line-height: 30px;
     vertical-align: top;
@@ -181,14 +165,12 @@ box-sizing: border-box;
     text-transform: uppercase;
 }
 
- .shopping-cart:hover {
+.shopping-cart:hover {
 	color: #fb565a;
- }
+}
 .shopping-cart:active {
 	color: #a6a6a6;
- }
-
-
+}
 
 .shopping-cart::before {
 	content: "";
@@ -197,9 +179,6 @@ box-sizing: border-box;
 	left: 0;
 	width: 16px;
 	height: 16px;
-
-	 
-
 	background: transparent url('../img/sprite1.png') no-repeat;
 	background-position: -30px -112px;
 }
@@ -207,18 +186,18 @@ box-sizing: border-box;
 .company-advantages {
 	padding-top: 80px;
 	margin-bottom: 60px;
-	margin-left: -50px;
-    margin-right: -50px;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .company-advantages-item {
+	float: left;
 	width: 300px;
-	margin-left: 50px; 
-	margin-right: 50px; 
+	margin-right: 100px; 
 	margin-bottom: 80px;
-    float: left;
-    
+}
+
+.company-advantages-item:last-child {
+  margin-right: 0;
 }
 
 .company-advantages-title {
@@ -239,7 +218,6 @@ box-sizing: border-box;
 	width: 300px;
 	height: 146px;
 }
-
 
 .company-presentation-left {
 	float:left;
@@ -270,21 +248,15 @@ box-sizing: border-box;
 	float:right;
 	margin-top: -20px;
 	width:360px;
-
-	 
 }
 
 .company-achievements .company-achievements-title {
 	display: block;
 	padding-top: 30px;
-	padding-left: 10px; 
+	padding-left: 16px; 
 	margin-bottom: 41px;
 	text-transform: uppercase;
 	font-weight: 700; 
-}
-
-.company-guarantees small {
-	font-size: 70%;
 }
 
 .development-advantages ul {
@@ -292,7 +264,6 @@ box-sizing: border-box;
 	padding: 0;
 	margin-top: 24px;
 	list-style: none;
-
 }
 
 .development-advantages li {
@@ -315,13 +286,13 @@ box-sizing: border-box;
 
 .company-guarantees {
 	width: 105px;
-	margin-right: 8px;
+	margin-right: 10px;
 	display: inline-block;
 	vertical-align: top;
 }
 
 .company-guarantees-top {
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 
 .company-guarantees-list .company-guarantees-percent {
@@ -337,9 +308,9 @@ box-sizing: border-box;
 	top: -0.6em;
 }
 
-.company-guarantees-list .company-guarantees-advantages {
+.company-guarantees-bottom {
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 18px;
 }
 
 .btn-order-web {
@@ -355,10 +326,10 @@ box-sizing: border-box;
 }
 
 .btn-order-app:active { 
-   background-color: #00aa62; 
-   color: #4dc491;
-   box-shadow: inset 0 3px 0px 0 #009958;
- }
+	background-color: #00aa62; 
+	color: #4dc491;
+	box-shadow: inset 0 3px 0px 0 #009958;
+}
 
 .btn-order-present {
 	background-color: #efc84a;
@@ -372,11 +343,7 @@ box-sizing: border-box;
    background-color: #e5a722; 
    color: #edc265;
    box-shadow: inset 0 3px 0px 0 #ce961f;
- }
-
- 
-
- 
+}
 
 .company-presentation {
 	padding-bottom: 47px;
@@ -387,11 +354,13 @@ box-sizing: border-box;
 	margin-bottom:55px;
 }
 
-.filter-price h2 {
+.filter-price-title {
+	margin: 0;
+	padding-top: 20px;
+	margin-bottom: 47px;
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
-	margin-bottom: 50px;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -402,7 +371,7 @@ box-sizing: border-box;
 .range-controls {
 	position: relative;
 	height: 80px;
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	padding: 0 20px;
 	background: #eeeeee;
 	border-radius: 2px;
@@ -410,12 +379,13 @@ box-sizing: border-box;
 }
 
 .range-controls .scale {
-   margin-top: 39px;
-   height: 2px;
-   background: #d7dcde;
+  	margin-top: 39px;
+  	height: 2px;
+  	background: #d7dcde;
 }
 
 .range-controls .bar {
+	width: 70%;
 	height: 2px;
 	background: #00ca74;
 }
@@ -440,36 +410,47 @@ box-sizing: border-box;
 .price-controls input {
 	width: 80px;
 	padding: 6px 10px;
-	margin-left: 10px;
+	margin-left: 8px;
     border: none;
-    font-size: 16px;
-    line-height: 24px;
+    font: inherit;
+    line-height: 22px;
     color: #000000;
     background: #eeeeee; 
-    font-family: "Roboto","PT Sans Narrow", "Arial",  sans-serif;
     font-weight: normal;
     text-align: center;
     border-radius: 3px;
 }
 
-.price-controls {
-	white-space: nowrap;
+.price-controls label {
+	font: inherit;
+    line-height: 22px;
+}
+
+.set-min-price   {
+	float: left;
+}
+
+.set-max-price   {
+ 	float: right;
 }
 
 .price-controls .min-price {
 	margin-right: 35px;
 } 
 
-.html-arrangement-type h2 {
-	margin-bottom: 5px;
+.html-arrangement-typ-title {
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-
-.arrangement-type {
+.arrangement-type-options {
 	margin-bottom: 8px;
 }
 
-.product-features-item {
+.product-features-options {
 	margin-bottom: 8px;
 }
 
@@ -481,130 +462,131 @@ box-sizing: border-box;
 
 .btn-products-filtr:hover {
   	background-color: #dfdfdf; 
- }
-
-.html-arrangement-type {
-	margin-bottom: 44px;
 }
 
-.product-features-container h2 {
-	margin-bottom: 7px;
+.html-arrangement-type {
+	padding-top: 0;
+	margin-bottom: 35px;
+}
+
+.product-features-container-title {
+	margin-bottom: 14px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .product-features-container {
-	margin-bottom: 46px;
+	margin-bottom: 40px;
 }
 
-.input[type="checkbox"],
-.input[type="radio"]{
+.product-features-options input[type="checkbox"],
+.arrangement-type-options input[type="radio"]{
 	display:none;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+.product-features-options input[type="checkbox"] + label,
+.arrangement-type-options input[type="radio"] + label {
 	font-size: 16px;
 	line-height: 20px;
 	color: #283136;
     cursor: pointer;
 }
 
-input[type="checkbox"] + label::before,
-input[type="radio"] + label::before {
+.product-features-options input[type="checkbox"] + label::before,
+.arrangement-type-options input[type="radio"] + label::before {
 	content:"";
 	display: inline-block;
+	vertical-align: top;
 	height: 32px;
     width: 32px;
-    margin: 0 5px -7px 0;
+    margin: 0 5px 0 0;
     background: url('../img/sprite1.png') no-repeat;
 }
 
-input[type="radio"] + label::before {
-	background-position: -31px -1148px;
+.arrangement-type-options input[type="radio"] + label::before {
+	background-position: -33px -1155px;
 	opacity: 0.4;
 }
 
-input[type="radio"] + label:hover::before {
-	background-position: -31px -1148px;
+.arrangement-type-options input[type="radio"] + label:hover::before {
+	background-position: -33px -1155px;
 	opacity: 1;
 }
 
-input[type="radio"]:checked + label:hover::before {
-	background-position: -31px -1205px;
+.arrangement-type-options input[type="radio"]:checked + label:hover::before {
+	background-position: -33px -1212px;
 	opacity: 1;
 }
 
-input[type="radio"]:checked + label:hover {
+.arrangement-type-options input[type="radio"]:checked + label:hover {
 	color: #000000;
 } 
  
-input[type="radio"]:checked + label::before {
-	background-position: -31px -1205px;
+.arrangement-type-options input[type="radio"]:checked + label::before {
+	background-position: -33px -1212px;
 	opacity: 0.4;
 }
 
-input[type="radio"]:disabled + label::before {
-	background-position: -31px -1205px;
+.arrangement-type-options input[type="radio"]:disabled + label::before {
+	background-position: -33px -1212px;
 	opacity: 0.1;
 }
 
-input[type="radio"]:disabled + label {
+.arrangement-type-options input[type="radio"]:disabled + label {
 	color: #bec1c2;
 }
 
-input[type="radio"]:disabled + label:hover {
+.arrangement-type-options input[type="radio"]:disabled + label:hover {
 	color: #bec1c2; 
 }
 
-input[type="radio"]:checked + label {
+.arrangement-type-options input[type="radio"]:checked + label {
 	color: #283136;
 }
 
-input[type="radio"] + label:hover {
+.arrangement-type-options input[type="radio"] + label:hover {
 	color: #000000;
 }
 
-input[type="checkbox"]:checked + label::before {
-    background-position: -32px -1090px;
-}
-
-input[type="checkbox"]:checked + label:hover::before {
-    background-position: -32px -1090px;
-    opacity: 1;
-}
-
-input[type="checkbox"] + label::before {
-	background-position: -32px -1018px;
+.product-features-options input[type="checkbox"] + label::before {
+	background-position: -32px -1026px;
 	opacity: 0.4;
 }
 
-input[type="checkbox"] + label:hover::before {
-	background-position: -32px -1018px;
+.product-features-options input[type="checkbox"]:checked + label::before {
+    background-position: -32px -1098px;
+    opacity: 0.4;
+}
+
+.product-features-options input[type="checkbox"]:checked + label:hover::before {
+    background-position: -32px -1098px;
+    opacity: 1;
+}
+
+.product-features-options input[type="checkbox"] + label:hover::before {
+	background-position: -32px -1026px;
 	opacity: 1;
 }
 
-input[type="checkbox"]:checked + label {
-	background-position: -32px -1018px;
-	color: #bec1c2;
-}
-
-input[type="checkbox"]:checked + label {
+.product-features-options input[type="checkbox"]:checked + label {
 	color: #283136;
 }
 
-input[type="checkbox"]:disabled + label {
+.product-features-options input[type="checkbox"]:disabled + label {
 	color: #bec1c2;
 }
 
-input[type="checkbox"]:disabled + label:hover::before {
-	background-position: -32px -1018px;
+.product-features-options input[type="checkbox"]:disabled + label:hover::before {
+	background-position: -32px -1026px;
 	opacity: 0.1;
 }
 
-input[type="checkbox"]:disabled + label::before {
-	background-position: -32px -1018px;
+.product-features-options input[type="checkbox"]:disabled + label::before {
+	background-position: -32px -1026px;
 	opacity: 0.1;
 }
-
 
 .btn-products-filtr {
 	width: 260px;
@@ -612,19 +594,19 @@ input[type="checkbox"]:disabled + label::before {
 	background-color: #eeeeee;
 }
 
-.sorting-main-title {
+.sorting-title-block {
 	float: left;
 }
 
-.sorting-criteria  {
-	margin-bottom: 41px;
+.sorting-criteria {
+	margin-bottom: 39px;
 }
 
-.sorting-main-title h2 {
+.sorting-main-title {
 	font-size: 18px;
-	line-height: 18px;
-	font-weight: 700;
-	padding-top: 5px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .sorting-creteria-options {
@@ -633,63 +615,29 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .sorting-creteria-options-list {
-	padding-top: 20px;
-	padding-left: 21px;
+	float: left;
+	width: 320px;
+	margin-left: 19px;
 }
 
-.sort-options {
-	display:inline-block;
+.sorting-creteria-options ul {
+	margin: 0;
+	padding: 0;
+	padding-top: 24px;
+	list-style: none;
+	font-size: 0;  
+}
+
+.sorting-creteria-options li {
+    display: inline-block;
+    margin-right: 26px;
+    font-size: 14px;  
+    line-height: 18px;
+    text-transform: uppercase;
 	vertical-align: top;
 }
 
-.sort-by-title {
-	margin-right: 44px;
-}
-
-.rectangledown span {
-	display: block;
-	margin: 0;
-	padding: 0;
-	margin-top: 4px;
-	width: 0;
-	height: 0;
-	font-size: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #cccccc;
-	cursor: pointer;
-}
-
-.rectangledown .active-rectangle {
-	border-top: 10px solid #000000;
-}
-
-.rectangledown .active-rectangle:active {
-	border-top: 10px solid #000000;
-}
-
-.rectangleup span {
-	display: block;
-	margin-left: 4px;
-	padding-top: 5px;
-	width: 0;
-	height: 0;
-	font-size: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid #cccccc;
-	cursor: pointer;
-}
-
-.rectangleup span:hover {
-	border-bottom: 10px solid #999999;
-}
-
-.rectangleup span:active {
-	border-bottom: 10px solid #000000;
-}
-
-.sort-options a {
+.sorting-creteria-options-list a {
 	font-size: 14px;
 	line-height: 18px;
 	display: block;
@@ -700,66 +648,67 @@ input[type="checkbox"]:disabled + label::before {
 	cursor: pointer;
 }
 
-.sort-options .active-link {
-	 color: #000000;
+.sorting-creteria-options-list .active-link {
+	color: #000000;
 }
 
-.sort-options .active-link:hover {
-	 color: #000000;
+.sorting-creteria-options-list .active-link:hover {
+	color: #000000;
 }
 
-.sort-options a:hover {
+.sorting-creteria-options-list a:hover {
 	color: #707070;
 }
 
-.sort-options a:active {
+.sorting-creteria-options-list a:active {
 	color: #000000;
 }
- 
-.sort-by-price {
- 	margin-right: 22px;
- }
 
-.sort-by-type {
- 	margin-right: 22px;
- }
-
-.updown-rectangle span {
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #000000;
-
+.sort-options-rectangles {
+	float: right;
 }
 
-.downup-rectangle span {
+.sort-rectangles {
+	display: inline-block;
+	padding-top: 28px;
+	vertical-align:top;
+}
+
+.rectangledown   {
+	display: block;
 	width: 0;
 	height: 0;
+	font-size: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #cccccc;
+	cursor: pointer;
+}
+
+.sort-rectangles .active-rectangle,
+.sort-rectangles .active-rectangle:active {
+	border-top: 10px solid #000000;
+}
+
+.rectangleup  {
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left: 15px;
+	font-size: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 10px solid #cccccc;
-
+	cursor: pointer;
 }
 
-.sorting-creteria-options ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 0; /* Т.к li реализованы с помощью блочнострочных элементов */
+.sort-rectangles .rectangleup:hover {
+	border-bottom: 10px solid #999999;
 }
 
-.sorting-creteria-options li {
-    display: inline-block;
-	padding-left: 0;
-    padding-right: 25px;
-    padding-top: 22px;
-    padding-bottom: 4px;  
-    font-size: 14px;  
-    line-height: 18px;
-	vertical-align: top;
+.sort-rectangles .rectangleup:active {
+	border-bottom: 10px solid #000000;
 }
-
 
 .top-decoration-pattern {
 	padding-left: 16px;
@@ -785,35 +734,32 @@ input[type="checkbox"]:disabled + label::before {
 	height: 575px;
 }
 
-
 .portfolio-items-pages {
 	width: 455px;
 }
 
 .portfolio-items-pages .btn-page {
 	display: inline-block;
-	margin-right: 8px;
- 	
+	padding-top: 12px;
+	margin-right: 7px;
 	min-width: 50px;
 	height: 50px;
-	line-height: 44px;
+	line-height: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 	color: #000000;
 	background: #eeeeee;
 	text-decoration: none;
 	border: 3px solid #eeeeee;
 	border-radius: 3px;
-
 }
 
 .portfolio-items-pages .btn-page-next {
 	width: 260px;
 }
  
-
 .portfolio-items-pages .btn-page-active {
    background-color: #ffffff;  
 }
@@ -824,41 +770,34 @@ input[type="checkbox"]:disabled + label::before {
 	border-radius: 3px;
 }
 
- 
 .btn-page:active { 
-   background-color: #d5d5d5; 
-   color: #959595;
-   box-shadow: inset 0 3px 0px 0 #bfbfbf;
-   border: none;
-   line-height: 50px;  
+	background-color: #d5d5d5; 
+	color: #959595;
+	box-shadow: inset 0 3px 0px 0 #bfbfbf;
+	border: none;
+	padding-top: 15px;
 }
  
 .company-product-logos {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	 
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	margin-top: 47px;
 	padding-bottom: 42px;
 	margin-bottom: 80px;
 	border-bottom: 2px solid #eeeeee; 	
-	 
 }
 
-
-.company-product-logos-item {
-	 
+.company-product-logos-item  {
+	display: block;
 	width: 240px; 
 	height: 90px;
-	 
 	font-size: 0;
-	 
 	text-decoration: none;
-
-
-	background: transparent url('../img/sprite1.png') no-repeat;
+    background: transparent url('../img/sprite1.png') no-repeat;
 }
-
- 
 
 .htmlac-logo {
  	background-position: -25px -253px;
@@ -882,7 +821,7 @@ input[type="checkbox"]:disabled + label::before {
 	content: "";
 	position: absolute;
 	top: 17px;
-	left: 258px;
+	left: 254px;
 	display: block;
 	width: 2px;
 	height: 52px; 
@@ -936,7 +875,6 @@ input[type="checkbox"]:disabled + label::before {
 	position: relative;
 }
 
-
 .pink-separator::after {
 	content: "";
 	position: absolute;
@@ -946,44 +884,55 @@ input[type="checkbox"]:disabled + label::before {
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
-
 }
 
- .mishka-logo {
+.mishka-logo {
    	background-position: 18px -650px;
    	opacity: 0.2;
    	cursor: pointer;
- }
+}
 
- .mishka-logo:hover {
+.mishka-logo:hover {
    	opacity: 1;
- }
+}
 
- .mishka-logo:active {
+.mishka-logo:active {
     opacity: 0.1;
 }
 
 .map {
-	width: 1440px;
+	width: 100%;
 	height: 416px;
  	margin: 0 auto; 
-	padding-top: 52px;
-	background: transparent url('../img/map.jpg') no-repeat;
-	 
- }
+	padding-top: 53px;
+	background: #e9e5dc url('../img/map.jpg') no-repeat;
+	background-position: 50% 0;
+}
 
 .contacts {
 	float:left;
+	padding: 50px 50px;
+	padding-bottom: 46px;
 	width: 320px;
     background-color: #ffffff;
 }
 
-.contacts p b {
+.contacts p {
+	margin: 0;
+	padding-right:10px;
+	margin-bottom: 19px;
 	display: block;
-	padding-top: 35px;
-	padding-left:50px;
-	margin-bottom: 28px;
-	
+	line-height: 18px;
+    color: #666666;
+}
+
+.contacts span {
+	display: block;
+	margin-bottom: 23px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
 }
 
 .company-adress {
@@ -1005,17 +954,13 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .btn-contactus {
+	margin-top:37px;
 	width: 220px;
-	margin: 0 auto;
-	margin-bottom: 45px;
 }
-
 
 .main-footer {
 	margin-top: 0px;
 	padding-top:0px;
-
- 
 }
 
 .footer-social {
@@ -1084,29 +1029,30 @@ input[type="checkbox"]:disabled + label::before {
 
 .slogan {
 	float:right;
-	margin-top: 61px;
+	padding-top: 75px;
 	width:660px;
 	margin-right:100px;
 }
 
-.main-footer p b  {
+.slogan b  {
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
 	font-size: 36px;
 	line-height: 36px;
+	font-weight: 700;
 }
 
-.discount-for-scf p {
-	display: block;
-	margin-top: -8px;
-	font-size: 16px;
+.slogan p {
+	margin: 0;
+	padding: 0;
 	line-height: 22px;
 }
 
 .products-filtr {
 	float:left;
 	width:280px;
-
-	/* Только для оформления сетки */
-	min-height: 840px;
 }
 
 .company-portfolio {
@@ -1120,7 +1066,7 @@ input[type="checkbox"]:disabled + label::before {
 	float:left;
 	width:360px;
 	margin-right: 40px;
-	margin-bottom:36px;
+	margin-bottom:37px;
 }
 
 .portfolio-item:nth-child(2n) {
@@ -1129,15 +1075,14 @@ input[type="checkbox"]:disabled + label::before {
 
 .company-portfolio-patterns {
 	width:760px;
-	margin-bottom: 29px;
+	margin-bottom: 26px;
 }
 
-.portfolio-item-hover h2 {
-	display: block;
+.portfolio-item-hover-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
-	margin-top: 8px;
+	margin-top: 6px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
@@ -1153,24 +1098,24 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .pink-hover p {
-   display: block;	
-   width: 250px;
+	display: block;	
+	width: 250px;
 }
 
 .aplus-hover p {
-   display: block;	
-   width: 250px
+  	display: block;	
+	width: 250px
 }
 
 .kvast-hover p {
-   display: block;	
-   width: 250px
+  	display: block;	
+  	width: 250px
 }
 
 .btn-pattern-price {
 	width: 200px;
 	margin: 0 auto;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 
 .portfolio-item  {
@@ -1178,15 +1123,14 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .portfolio-item-hover  {
-  display: none;
-  width: 360px;
-  padding: 20px;
-  text-align: center;
-  background: #eeeeee;
-  position: absolute;
-  top: 385px;
+	display: none;
+	width: 360px;
+	padding: 20px;
+	text-align: center;
+	background: #eeeeee;
+	position: absolute;
+ 	top: 384px;
 }
-
 
 .portfolio-item:hover .sedona-hover  {
 	display: block;
@@ -1226,12 +1170,10 @@ input[type="checkbox"]:disabled + label::before {
 	margin: 0 auto;
 }
 
-
 .slider input[type=radio] {
  	opacity: 0;
 
-}	 
- 
+}	  
 
 .slider-controls {
 	position: absolute;
@@ -1261,7 +1203,6 @@ input[type="checkbox"]:disabled + label::before {
 .btn-1:checked ~ .slider-controls label[for="btn-1"],
 .btn-2:checked ~ .slider-controls label[for="btn-2"],
 .btn-3:checked ~ .slider-controls label[for="btn-3"] {
-
 	background: #c1c1c1;
 
 }
@@ -1269,7 +1210,6 @@ input[type="checkbox"]:disabled + label::before {
 .btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
 .btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
 .btn-3:checked ~ .slider-controls label[for="btn-3"]::before {
-     
     position: absolute;
 	background: #ffffff;
 	left: 1px;
@@ -1279,13 +1219,11 @@ input[type="checkbox"]:disabled + label::before {
 	display: block;
 	content:"";
 	border-radius: 50%;
-
 }
+
 .slider-controls .active {
 	background: #c1c1c1;
 }
-
-
 
 .slide {
 	position: absolute;
@@ -1303,14 +1241,11 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .slide-text p {
-
 	padding-right: 150px;
 	margin-bottom: 40px;
-	 
 }
 
 .slide-title {
-
 	font-size: 55px;
 	margin-bottom: 25px;
 	line-height: 55px;
@@ -1319,8 +1254,6 @@ input[type="checkbox"]:disabled + label::before {
 	color: #000000;
 }
 
- 
-
 .btn-slide {
 	width: 240px;
 }
@@ -1328,7 +1261,7 @@ input[type="checkbox"]:disabled + label::before {
 .slide:nth-child(1) {
 	background-image:url('../img/slider-1.png');
 	background-repeat:no-repeat;
-	background-position: 100% 0; /*  поставил 0 px вместо 10px и вопрос решился, первый слайд на нужном месте*/
+	background-position: 100% 0; 
 }
 
 .slide:nth-child(2) {
@@ -1400,7 +1333,7 @@ input[type="checkbox"]:disabled + label::before {
 .modal-content-close::after {
 	content:"";
 	position: absolute;
-	top: 8px;
+	top: 10px;
 	left: 0px;
 	width: 25px;
 	height: 5px;
@@ -1434,7 +1367,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .modal-content .model-content-title {
 	margin: 0;
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 	font-size: 45px;
 	line-height: 45px;
 	text-transform: none;
@@ -1444,7 +1377,9 @@ input[type="checkbox"]:disabled + label::before {
 .modal-content label {
 	display: block;
 	margin: 0;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: 700;
 }
 
@@ -1452,8 +1387,9 @@ input[type="checkbox"]:disabled + label::before {
 .contactus-form textarea {
 	width: 360px;
 	margin: 0;
-    padding: 11px 14px;
+    padding: 14px 14px;
 	font: inherit;
+	line-height: 18px;
 	color: #a1a1a1;
 	text-transform: none;
 	background-color: #ffffff;
@@ -1481,7 +1417,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .contactus-form-sender-contacts {
-	margin-bottom: 32px;
+	margin-bottom: 35px;
 }
 
 .contactus-form textarea {

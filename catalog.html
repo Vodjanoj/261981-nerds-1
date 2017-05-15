@@ -2,6 +2,7 @@
 <html lang="ru">
   	<head>
     	<meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
         <link rel="stylesheet" href="css/style.css">
@@ -12,12 +13,12 @@
 			<div class="container">
                 <div class="main-header-top clearfix">
 				    <div class="index-logo">
-					   <a href="../261981-nerds-1/index.html"><img src="img/main-logo.png" width="161" height="65" alt="Нердс"></a>
+					   <a href="./././index.html"><img src="img/main-logo.png" width="161" height="65" alt="Нердс"></a>
 				    </div>
 				    <nav class="main-navigation">
 					    <ul class="main-navigation-items">
 					        <li>
-						       <a href="../261981-nerds-1/index.html">Студия</a>
+						       <a href="#">Студия</a>
 						    </li>
 						    <li>
 							    <a href="#">Клиенты</a>
@@ -44,53 +45,61 @@
                 <div class="products-filtr">
                     <form action="#" method="get">
                         <div class="filter-price">
-                            <h2>Стоимость:</h2>
+                            <h2 class="filter-price-title">Стоимость:</h2>
                             <div class="range-filter">
                                 <div class="range-controls">
-                                    <div class="scale"><div style="width:70%" class="bar"></div></div>
+                                    <div class="scale"><div class="bar"></div></div>
                                     <div class="toggle min-toggle"></div>
                                     <div class="toggle max-toggle"></div>
                                 </div>
-                                <div class="price-controls">ОТ<input class="min-price" type="text" value="0">ДО<input class="max-price" type="text" value="15 000">
+                                <div class="price-controls clearfix">
+                                    <div class="set-min-price">
+                                        <label for="set-min-price">ОТ</label>
+                                        <input id="set-min-price" type="text" value="0">
+                                    </div>
+                                    <div class="set-max-price">
+                                        <label for="set-max-price">ДО</label>
+                                        <input id="set-max-price" type="text" value="15 000">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="html-arrangement-type">
-                            <h2>Сетка:</h2>
-                            <div class="arrangement-type">
+                            <h2 class="html-arrangement-typ-title">Сетка:</h2>
+                            <div class="arrangement-type-options">
                                 <input id="arrangement-type-responsive" type="radio" name="arrangement-type-item" value="responsive" checked hidden>
                                 <label for="arrangement-type-responsive">Адаптивная</label>
                             </div>
-                            <div class="arrangement-type">
+                            <div class="arrangement-type-options">
                                 <input id="arrangement-type-fixed" type="radio" name="arrangement-type-item" value="fixed" disabled hidden>
                                 <label for="arrangement-type-fixed">Фиксированная</label> 
                             </div>
-                            <div class="arrangement-type">
+                            <div class="arrangement-type-options">
                                 <input id="arrangement-type-flexible" type="radio" name="arrangement-type-item" value="flexible" hidden>
                                 <label for="arrangement-type-flexible">Резиновая</label>
                             </div>
                         </div>
                         <div class="product-features-container">
-                            <h2>Особенности:</h2>
-                            <div class="product-features-item">
+                            <h2 class="product-features-container-title">Особенности:</h2>
+                            <div class="product-features-options">
                                 <input name="product-checking" id="product-feature-slider" type="checkbox" checked hidden>
-                                <label for="product-feature-slider">Слайдер</label><br>
+                                <label for="product-feature-slider">Слайдер</label>
                             </div>
-                            <div class="product-features-item">
+                            <div class="product-features-options">
                                 <input id="product-feature-adv" name="product-checking" type="checkbox" disabled="" hidden>
-                                <label for="product-feature-adv">Блок преимуществ</label><br>
+                                <label for="product-feature-adv">Блок преимуществ</label>
                             </div>
-                            <div class="product-features-item">
+                            <div class="product-features-options">
                                 <input id="product-feature-news" name="product-checking" type="checkbox" checked hidden>
-                                <label for="product-feature-news">Новости</label><br>
+                                <label for="product-feature-news">Новости</label>
                             </div>
-                            <div class="product-features-item">
+                            <div class="product-features-options">
                                 <input id="product-feature-gallery" name="product-checking" type="checkbox" hidden>
-                                <label for="product-feature-gallery">Галерея</label><br>
+                                <label for="product-feature-gallery">Галерея</label>
                             </div>
-                            <div class="product-features-item">
+                            <div class="product-features-options">
                                 <input id="product-feature-cart" name="product-checking" type="checkbox" hidden>
-                                <label for="product-feature-cart">Корзина</label><br>
+                                <label for="product-feature-cart">Корзина</label>
                             </div>
                         </div>
                         <input class="btn btn-products-filtr" type="submit" value="Показать">
@@ -98,25 +107,29 @@
                 </div>
                 <div class="company-portfolio">
                     <div class="sorting-criteria clearfix">
-                        <div class="sorting-main-title">
-                            <h2>Сортировать:</h2>
+                        <div class="sorting-title-block">
+                            <h2 class="sorting-main-title">Сортировать:</h2>
                         </div>
-                        <div class="sorting-creteria-options">
+                        <div class="sorting-creteria-options clearfix">
                             <div class="sorting-creteria-options-list">
-                                <div class="sort-options sort-by-price">
-                                    <a class="sort-options-item-link active-link">По цене</a>
+                                <ul>
+                                    <li>
+                                        <a class="sort-options active-link">По цене</a>
+                                    </li>
+                                    <li>
+                                        <a class="sort-options sort-by-type">По типу</a>
+                                    </li>
+                                    <li>
+                                        <a class="sort-options sort-by-title">По названию</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sort-options-rectangles">
+                                <div class="sort-rectangles">
+                                    <span class="rectangledown active-rectangle">Сортировка по убыванию</span>
                                 </div>
-                                <div class="sort-options sort-by-type">
-                                    <a class="sort-options-item-link">По типу</a>
-                                </div>
-                                <div class="sort-options sort-by-title">
-                                    <a class="sort-options-item-link">По названию</a>
-                                </div>
-                                <div class="sort-options rectangledown">
-                                    <span class="active-rectangle"></span>
-                                </div>
-                                <div class="sort-options rectangleup">
-                                    <span></span>
+                                <div class="sort-rectangles">
+                                    <span class="rectangleup">Сортировка по возрастанию</span>
                                 </div>
                             </div>
                         </div> 
@@ -135,7 +148,7 @@
                                 <img src="img/img-sedona.jpg" width="360" height="575" alt="Sedona">
                             </div>
                             <div class="portfolio-item-hover sedona-hover">
-                                <h2>Sedona</h2>
+                                <h2 class="portfolio-item-hover-title">Sedona</h2>
                                 <p>Информационный сайт  для туристов</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -153,7 +166,7 @@
                                 <img src="img/img-pink.jpg" width="360" height="575" alt="Pink">
                             </div>
                             <div class="portfolio-item-hover pink-hover">
-                                <h2>Pink app</h2>
+                                <h2 class="portfolio-item-hover-title">Pink app</h2>
                                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -171,7 +184,7 @@
                                 <img src="img/img-barbershop.jpg" width="360" height="575" alt="Barbershop">
                             </div>
                             <div class="portfolio-item-hover barbershop-hover">
-                                <h2>BARBERSHOP</h2>
+                                <h2 class="portfolio-item-hover-title">BARBERSHOP</h2>
                                 <p>Сайт салоны красоты. Для мужчин, да</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -191,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="portfolio-item-hover mishka-hover">
-                                <h2>MISHKA</h2>
+                                <h2 class="portfolio-item-hover-title">MISHKA</h2>
                                 <p>Интернет-магазин вязаных игрушек</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -209,7 +222,7 @@
                                 <img src="img/img-aplus.jpg" width="360" height="575" alt="A plus">
                             </div>
                              <div class="portfolio-item-hover aplus-hover">
-                                <h2>A PLUS</h2>
+                                <h2 class="portfolio-item-hover-title">A PLUS</h2>
                                 <p>Лендинг курсов повышения квалификации</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -227,7 +240,7 @@
                                 <img src="img/img-kvast.jpg" width="360" height="575" alt="Kvast">
                             </div>
                             <div class="portfolio-item-hover kvast-hover">
-                                <h2>Кваст</h2>
+                                <h2 class="portfolio-item-hover-title">Кваст</h2>
                                 <p>Промо-сайт производителя крафтового кваса</p>
                                 <button class="btn btn-pattern-price" type="button">9 900 РУБ.</button>
                             </div>
@@ -242,15 +255,13 @@
                 </div>
             </div>
         </main>
-        <div class="map"><!-- Фоновую картинку карты зададим в CSS --> 
+        <div class="map"> 
             <div class="container">  
                 <div class="contacts">
-                    <p><b>NЁRDS DESIGN STUDIO</b></p>
-                    <div class="company-adress"><p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-                    </div>
-                    <div class="company-phonenumber"><p>тел. +7 (812) 275-75-75</p>
-                    </div>
-                    <a href="#" class="btn btn-contactus">Напишите нам</a>
+                    <span>NЁRDS DESIGN STUDIO</span>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a href="writeus.html" class="btn btn-contactus">Напишите нам</a>
                 </div>
             </div>
         </div>
@@ -263,11 +274,31 @@
                 </section>
                 <section class="slogan">
                     <p><b>Давайте дружить, это выгодно!</b></p>
-                    <div class="discount-for-scf"><p>Скидка 10% для друзей из социальных сетей.</p>
-                    </div>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
                 </section>
             </div>
-        </footer>
+        </footer> <!--
+         <div class="modal-content">  
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h2 class="model-content-title">Напишите нам</h2>
+            <form class="contactus-form" action="#" method="post">
+                <div class="contactus-form-sender-contacts clearfix">
+                    <div class="contactus-form-sender-name">                
+                        <label for="sender-name">Ваше имя:</label>
+                        <input id="sender-name" type="text" name="sender-name-field" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="contactus-form-sender-email">             
+                        <label for="sender-email">Ваш e-mail:</label>
+                        <input id="sender-email" type="text" name="sender-email-field" placeholder="Для отправки ответа">
+                    </div> 
+                </div>
+                <div class="email-text">
+                    <label for="email-text-area">Текст письма:</label>
+                    <textarea id="email-text-area" name="email-text-area-field" placeholder="В свободной форме"></textarea>
+                </div>
+                <button class="btn btn-text-send" type="submit">Отправить</button>
+            </form>   
+        </div> -->
     </body>
 </html>
 
