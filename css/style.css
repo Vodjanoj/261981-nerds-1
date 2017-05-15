@@ -764,7 +764,7 @@ html {
    background-color: #ffffff;  
 }
 
- .btn-page:hover {
+.btn-page:hover {
 	background: #dfdfdf;
 	border: 3px solid #dfdfdf;
 	border-radius: 3px;
@@ -1401,7 +1401,6 @@ html {
     border-color: #000000;
     color: #000000;
 }
-
 
 .contactus-form input[type=text]:hover {
     border-color: #b4b9bb;
