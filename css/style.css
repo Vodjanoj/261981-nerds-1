@@ -7,8 +7,8 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #000000;
-	background-color: #ffffff; 
-	font-family: "Roboto", "Arial",  sans-serif;
+	background-color: #ffffff;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: normal;
 	min-width: 1200px;
 }
@@ -22,25 +22,25 @@ body {
 	font-weight: 500;
 	text-align: center;
 	color: #000000;
-	font-family: "Roboto", "Arial",  sans-serif;	
- }
+	font-family: "Roboto", "Arial", sans-serif;
+}
 
 html {
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 * {
-	box-sizing: inherit;	
+	box-sizing: inherit;
 }
 
 .clearfix::after {
- 	content: "";
+	content: "";
 	display: table;
- 	clear: both;
+	clear: both;
 }
- 
+
 .main-header {
-	color: #000000; 
+	color: #000000;
 	background-color: #eeeeee;
 }
 
@@ -58,14 +58,14 @@ html {
 	display:block;
 	padding: 16px 0px;
 	width: 160px;
-	font-weight: 400;  
+	font-weight: 400;
 	font-size: 16px;
-   	line-height: 18px;
-	font-family: "Roboto", "Arial",  sans-serif;
-    color:#ffffff; 
-	text-align: center; 
-	text-transform: uppercase; 
-	text-decoration: none; 
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color:#ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
 	border-radius: 3px;
 	background-color: #fb565a;
 	border: none;
@@ -76,16 +76,16 @@ html {
 	background: #e74246;
 }
 
-.btn:active { 
-	background-color: #d7373b; 
+.btn:active {
+	background-color: #d7373b;
 	color: #e37376;
 	box-shadow: inset 0 3px 0px 0 #c13135;
- }
+}
 
 .index-logo {
-	width:165px;
+	width: 165px;
 	height: 67px;
-	float:left;
+	float: left;
 	background-color: #eeeeee;
 	cursor: pointer;
 }
@@ -99,26 +99,26 @@ html {
 }
 
 .main-navigation {
-	width:500px;
-	float:left;
-    margin-left: 196px;
+	width: 500px;
+	float: left;
+	margin-left: 196px;
 }
 
 .main-navigation .main-navigation-items {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-size: 0;  
+	font-size: 0;
 }
 
 .main-navigation li {
 	display: inline-block;
 	padding-left: 0;
-    margin-right: 46px;
-    padding-top: 28px;
-    padding-bottom: 4px;  
-    font-size: 16px;  
-    line-height: 30px;
+	margin-right: 46px;
+	padding-top: 28px;
+	padding-bottom: 4px;
+	font-size: 16px;
+	line-height: 30px;
 	vertical-align: top;
 }
 
@@ -139,30 +139,30 @@ html {
 }
 
 .main-navigation .active-page {
- 	border-bottom: 2px solid #fb565a;
+	border-bottom: 2px solid #fb565a;
 }
 
 .main-navigation .active-page:hover {
- 	color: black;
+	color: black;
 }
- 
+
 .user-block {
 	float:right;
-    max-width:160px;
+	max-width:160px;
 }
 
 .shopping-cart {
 	position: relative;
 	display: inline-block;
 	padding-left: 40px;
-    padding-right: 0;
-    padding-top: 28px;
-    font-size: 16px;  
-    line-height: 30px;
-    vertical-align: top;
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
+	padding-right: 0;
+	padding-top: 28px;
+	font-size: 16px;
+	line-height: 30px;
+	vertical-align: top;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .shopping-cart:hover {
@@ -192,16 +192,16 @@ html {
 .company-advantages-item {
 	float: left;
 	width: 300px;
-	margin-right: 100px; 
+	margin-right: 100px;
 	margin-bottom: 80px;
 }
 
 .company-advantages-item:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .company-advantages-title {
-	margin-top: 23px; 
+	margin-top: 23px;
 	margin-bottom: 18px;
 	font-size: 24px;
 	line-height: 30px;
@@ -315,10 +315,12 @@ html {
 
 .btn-order-web {
 	background-color: #fb565a;
+	padding-top: 17px;
 }
 
 .btn-order-app {
 	background-color: #00ca74;
+	padding-top: 17px;
 }
 
 .btn-order-app:hover {
@@ -333,6 +335,7 @@ html {
 
 .btn-order-present {
 	background-color: #efc84a;
+	padding-top: 17px;
 }
 
 .btn-order-present:hover {
@@ -340,9 +343,9 @@ html {
 }
 
 .btn-order-present:active { 
-   background-color: #e5a722; 
-   color: #edc265;
-   box-shadow: inset 0 3px 0px 0 #ce961f;
+	background-color: #e5a722; 
+	color: #edc265;
+	box-shadow: inset 0 3px 0px 0 #ce961f;
 }
 
 .company-presentation {
@@ -379,9 +382,9 @@ html {
 }
 
 .range-controls .scale {
-  	margin-top: 39px;
-  	height: 2px;
-  	background: #d7dcde;
+	margin-top: 39px;
+	height: 2px;
+	background: #d7dcde;
 }
 
 .range-controls .bar {
@@ -393,10 +396,10 @@ html {
 .range-controls .toggle {
 	position: absolute;
 	top: 30px;
-    left: 20px;
+	left: 20px;
 	width: 20px;
-	height: 20px; 
-	border: 8px solid white; 
+	height: 20px;
+	border: 8px solid white;
 	background: #ababab;
 	cursor: pointer;
 	border-radius: 50%;
@@ -411,27 +414,27 @@ html {
 	width: 80px;
 	padding: 6px 10px;
 	margin-left: 8px;
-    border: none;
-    font: inherit;
-    line-height: 22px;
-    color: #000000;
-    background: #eeeeee; 
-    font-weight: normal;
-    text-align: center;
-    border-radius: 3px;
+	border: none;
+	font: inherit;
+	line-height: 22px;
+	color: #000000;
+	background: #eeeeee;
+	font-weight: normal;
+	text-align: center;
+	border-radius: 3px;
 }
 
 .price-controls label {
 	font: inherit;
-    line-height: 22px;
+	line-height: 22px;
 }
 
-.set-min-price   {
+.set-min-price {
 	float: left;
 }
 
-.set-max-price   {
- 	float: right;
+.set-max-price {
+	float: right;
 }
 
 .price-controls .min-price {
@@ -455,13 +458,13 @@ html {
 }
 
 .btn-products-filtr:active {
-  	background-color: #d5d5d5; 
+	background-color: #d5d5d5;
 	color: #959595;
-    box-shadow: inset 0 3px 0px 0 #bfbfbf;
-}	
+	box-shadow: inset 0 3px 0px 0 #bfbfbf;
+}
 
 .btn-products-filtr:hover {
-  	background-color: #dfdfdf; 
+	background-color: #dfdfdf;
 }
 
 .html-arrangement-type {
@@ -481,109 +484,109 @@ html {
 	margin-bottom: 40px;
 }
 
-.product-features-options input[type="checkbox"],
-.arrangement-type-options input[type="radio"]{
+.product-features-checkbox,
+.arrangement-type-radio {
 	display:none;
 }
 
-.product-features-options input[type="checkbox"] + label,
-.arrangement-type-options input[type="radio"] + label {
+.product-features-checkbox + label,
+.arrangement-type-radio  + label {
 	font-size: 16px;
 	line-height: 20px;
 	color: #283136;
-    cursor: pointer;
+	cursor: pointer;
 }
 
-.product-features-options input[type="checkbox"] + label::before,
-.arrangement-type-options input[type="radio"] + label::before {
+.product-features-checkbox + label::before,
+.arrangement-type-radio + label::before {
 	content:"";
 	display: inline-block;
 	vertical-align: top;
 	height: 32px;
-    width: 32px;
-    margin: 0 5px 0 0;
-    background: url('../img/sprite1.png') no-repeat;
+	width: 32px;
+	margin: 0 5px 0 0;
+	background: url('../img/sprite1.png') no-repeat;
 }
 
-.arrangement-type-options input[type="radio"] + label::before {
+.arrangement-type-radio + label::before {
 	background-position: -33px -1155px;
 	opacity: 0.4;
 }
 
-.arrangement-type-options input[type="radio"] + label:hover::before {
+.arrangement-type-radio + label:hover::before {
 	background-position: -33px -1155px;
 	opacity: 1;
 }
 
-.arrangement-type-options input[type="radio"]:checked + label:hover::before {
+.arrangement-type-radio:checked + label:hover::before {
 	background-position: -33px -1212px;
 	opacity: 1;
 }
 
-.arrangement-type-options input[type="radio"]:checked + label:hover {
+.arrangement-type-radio:checked + label:hover {
 	color: #000000;
-} 
+}
  
-.arrangement-type-options input[type="radio"]:checked + label::before {
+.arrangement-type-radio:checked + label::before {
 	background-position: -33px -1212px;
 	opacity: 0.4;
 }
 
-.arrangement-type-options input[type="radio"]:disabled + label::before {
+.arrangement-type-radio:disabled + label::before {
 	background-position: -33px -1212px;
 	opacity: 0.1;
 }
 
-.arrangement-type-options input[type="radio"]:disabled + label {
+.arrangement-type-radio:disabled + label {
 	color: #bec1c2;
 }
 
-.arrangement-type-options input[type="radio"]:disabled + label:hover {
-	color: #bec1c2; 
+.arrangement-type-radio:disabled + label:hover {
+	color: #bec1c2;
 }
 
-.arrangement-type-options input[type="radio"]:checked + label {
+.arrangement-type-radio:checked + label {
 	color: #283136;
 }
 
-.arrangement-type-options input[type="radio"] + label:hover {
+.arrangement-type-radio + label:hover {
 	color: #000000;
 }
 
-.product-features-options input[type="checkbox"] + label::before {
+.product-features-checkbox + label::before {
 	background-position: -32px -1026px;
 	opacity: 0.4;
 }
 
-.product-features-options input[type="checkbox"]:checked + label::before {
-    background-position: -32px -1098px;
-    opacity: 0.4;
+.product-features-checkbox:checked + label::before {
+	background-position: -32px -1098px;
+	opacity: 0.4;
 }
 
-.product-features-options input[type="checkbox"]:checked + label:hover::before {
-    background-position: -32px -1098px;
-    opacity: 1;
+.product-features-checkbox:checked + label:hover::before {
+	background-position: -32px -1098px;
+	opacity: 1;
 }
 
-.product-features-options input[type="checkbox"] + label:hover::before {
+.product-features-checkbox + label:hover::before {
 	background-position: -32px -1026px;
 	opacity: 1;
 }
 
-.product-features-options input[type="checkbox"]:checked + label {
+.product-features-checkbox:checked + label {
 	color: #283136;
 }
 
-.product-features-options input[type="checkbox"]:disabled + label {
+.product-features-checkbox:disabled + label {
 	color: #bec1c2;
 }
 
-.product-features-options input[type="checkbox"]:disabled + label:hover::before {
+.product-features-checkbox:disabled + label:hover::before {
 	background-position: -32px -1026px;
 	opacity: 0.1;
 }
 
-.product-features-options input[type="checkbox"]:disabled + label::before {
+.product-features-checkbox:disabled + label::before {
 	background-position: -32px -1026px;
 	opacity: 0.1;
 }
@@ -629,11 +632,11 @@ html {
 }
 
 .sorting-creteria-options li {
-    display: inline-block;
-    margin-right: 26px;
-    font-size: 14px;  
-    line-height: 18px;
-    text-transform: uppercase;
+	display: inline-block;
+	margin-right: 26px;
+	font-size: 14px;  
+	line-height: 18px;
+	text-transform: uppercase;
 	vertical-align: top;
 }
 
@@ -674,7 +677,7 @@ html {
 	vertical-align:top;
 }
 
-.rectangledown   {
+.rectangledown {
 	display: block;
 	width: 0;
 	height: 0;
@@ -690,7 +693,7 @@ html {
 	border-top: 10px solid #000000;
 }
 
-.rectangleup  {
+.rectangleup {
 	display: block;
 	width: 0;
 	height: 0;
@@ -720,10 +723,10 @@ html {
 
 .top-decoration-pattern-circle {
 	vertical-align: top;
-    display: inline-block;
-    border-radius: 50px;
-    margin-right: 5px;
-    margin-top:13px;
+	display: inline-block;
+	border-radius: 50px;
+	margin-right: 5px;
+	margin-top:13px;
 	width: 14px;
 	height: 14px;
 	background-color: #ffffff;
@@ -759,9 +762,9 @@ html {
 .portfolio-items-pages .btn-page-next {
 	width: 260px;
 }
- 
+
 .portfolio-items-pages .btn-page-active {
-   background-color: #ffffff;  
+	background-color: #ffffff;
 }
 
 .btn-page:hover {
@@ -787,34 +790,34 @@ html {
 	margin-top: 47px;
 	padding-bottom: 42px;
 	margin-bottom: 80px;
-	border-bottom: 2px solid #eeeeee; 	
+	border-bottom: 2px solid #eeeeee;
 }
 
-.company-product-logos-item  {
+.company-product-logos-item {
 	display: block;
 	width: 240px; 
 	height: 90px;
 	font-size: 0;
 	text-decoration: none;
-    background: transparent url('../img/sprite1.png') no-repeat;
+	background: transparent url('../img/sprite1.png') no-repeat;
 }
 
 .htmlac-logo {
- 	background-position: -25px -253px;
- 	opacity: 0.2;
- 	cursor: pointer;
+	background-position: -25px -253px;
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .htmlac-logo:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .htmlac-logo:active {
-    opacity: 0.1;
-} 
+	opacity: 0.1;
+}
 
 .htmlac-separator {
- 	position: relative;
+	position: relative;
 }
 
 .htmlac-separator::after {
@@ -829,21 +832,21 @@ html {
 }
 
 .borod-logo {
- 	background-position: -19px -396px;
-    opacity: 0.2;
- 	cursor: pointer;
+	background-position: -19px -396px;
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .borod-logo:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
- .borod-logo:active {
-    opacity: 0.1;
+.borod-logo:active {
+	opacity: 0.1;
 }
 
 .borod-separator {
- 	position: relative;
+	position: relative;
 }
 
 .borod-separator::after {
@@ -858,17 +861,17 @@ html {
 }
 
 .pink-logo {
- 	background-position: 1px -525px;
-    opacity: 0.2;
- 	cursor: pointer;
+	background-position: 1px -525px;
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .pink-logo:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .pink-logo:active {
-    opacity: 0.1;
+	opacity: 0.1;
 }
 
 .pink-separator {
@@ -880,30 +883,30 @@ html {
 	position: absolute;
 	top: 17px;
 	left: 273px;
-    display: block;
+	display: block;
 	width: 2px;
 	height: 52px;
 	background-color: #eeeeee;
 }
 
 .mishka-logo {
-   	background-position: 18px -650px;
-   	opacity: 0.2;
-   	cursor: pointer;
+	background-position: 18px -650px;
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .mishka-logo:hover {
-   	opacity: 1;
+	opacity: 1;
 }
 
 .mishka-logo:active {
-    opacity: 0.1;
+	opacity: 0.1;
 }
 
 .map {
 	width: 100%;
 	height: 416px;
- 	margin: 0 auto; 
+	margin: 0 auto; 
 	padding-top: 53px;
 	background: #e9e5dc url('../img/map.jpg') no-repeat;
 	background-position: 50% 0;
@@ -914,7 +917,7 @@ html {
 	padding: 50px 50px;
 	padding-bottom: 46px;
 	width: 320px;
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .contacts p {
@@ -923,12 +926,12 @@ html {
 	margin-bottom: 19px;
 	display: block;
 	line-height: 18px;
-    color: #666666;
+	color: #666666;
 }
 
 .contacts span {
 	display: block;
-	margin-bottom: 23px;
+	margin-bottom: 22px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -960,12 +963,11 @@ html {
 
 .main-footer {
 	margin-top: 0px;
-	padding-top:0px;
 }
 
 .footer-social {
-	float:left;
-	width:280px;
+	float: left;
+	width: 280px;
 	margin-top: 68px;
 	margin-bottom: 68px;
 }
@@ -990,8 +992,8 @@ html {
 	background-color: #e74246;
 }
 
-.social-btn-vk:active { 
-	background-color: #d7373b; 
+.social-btn-vk:active {
+	background-color: #d7373b;
 	color: #edc265;
 	box-shadow: inset 0 3px 0px 0 #c13135;
 	background-position: -6px -1264px;
@@ -1006,7 +1008,7 @@ html {
 }
 
 .social-btn-fb:active {
-	background-color: #d7373b; 
+	background-color: #d7373b;
 	color: #edc265;
 	box-shadow: inset 0 3px 0px 0 #c13135;
 	background-position: -11px -1332px;
@@ -1021,17 +1023,17 @@ html {
 }
 
 .social-btn-inst:active {
-   	background-color: #d7373b; 
-  	color: #edc265;
-  	box-shadow: inset 0 3px 0px 0 #c13135;
+	background-color: #d7373b; 
+	color: #edc265;
+	box-shadow: inset 0 3px 0px 0 #c13135;
 	background-position: -13px -1406px;
 }
 
 .slogan {
-	float:right;
+	float: right;
 	padding-top: 75px;
-	width:660px;
-	margin-right:100px;
+	width: 660px;
+	margin-right: 100px;
 }
 
 .slogan b  {
@@ -1057,9 +1059,9 @@ html {
 
 .company-portfolio {
 	width:780px;
-    float:right;
-    padding-left: 20px;
-    padding-bottom: 60px; 
+	float:right;
+	padding-left: 20px;
+	padding-bottom: 60px;
 }
 
 .portfolio-item {
@@ -1073,9 +1075,14 @@ html {
 	margin-right:0px;
 }
 
+.portfolio-item:nth-child(3),
+.portfolio-item:nth-child(4) {
+	margin-bottom: 30px;
+}
+
 .company-portfolio-patterns {
 	width:760px;
-	margin-bottom: 26px;
+	margin-bottom: 24px;
 }
 
 .portfolio-item-hover-title {
@@ -1094,22 +1101,22 @@ html {
 	color: #666666;
 	width: 190px;
 	margin: 0 auto;
-	margin-bottom: 28px;
+	margin-bottom: 31px;
 }
 
 .pink-hover p {
-	display: block;	
+	display: block;
 	width: 250px;
 }
 
 .aplus-hover p {
-  	display: block;	
+	display: block;
 	width: 250px
 }
 
 .kvast-hover p {
-  	display: block;	
-  	width: 250px
+	display: block;
+	width: 250px
 }
 
 .btn-pattern-price {
@@ -1126,17 +1133,18 @@ html {
 	display: none;
 	width: 360px;
 	padding: 20px;
+	padding-bottom: 18px;
 	text-align: center;
 	background: #eeeeee;
 	position: absolute;
- 	top: 384px;
+	top: 384px;
 }
 
-.portfolio-item:hover .sedona-hover  {
+.portfolio-item:hover .sedona-hover {
 	display: block;
 }
 
-.portfolio-item:hover .top-decoration-pattern  {
+.portfolio-item:hover .top-decoration-pattern {
 	background-color: #4d4d4d;
 }
 
@@ -1171,9 +1179,8 @@ html {
 }
 
 .slider input[type=radio] {
- 	opacity: 0;
-
-}	  
+	opacity: 0;
+}
 
 .slider-controls {
 	position: absolute;
@@ -1210,7 +1217,7 @@ html {
 .btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
 .btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
 .btn-3:checked ~ .slider-controls label[for="btn-3"]::before {
-    position: absolute;
+	position: absolute;
 	background: #ffffff;
 	left: 1px;
 	top: 1px;
@@ -1275,7 +1282,7 @@ html {
 	background-repeat:no-repeat;
 	background-position: 100% 0px;
 }
- 
+
 .slide {
 	display:none;
 }
@@ -1297,6 +1304,7 @@ html {
 }
 
 .modal-content {
+	display: none;
 	position: absolute;
 	top: 1703px;
 	left: 50%;
@@ -1307,7 +1315,7 @@ html {
 	background-color: #ffffff;
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7)
 }
- 
+
 .modal-content-close {
 	position: absolute;
 	top: 75px;
@@ -1387,7 +1395,7 @@ html {
 .contactus-form textarea {
 	width: 360px;
 	margin: 0;
-    padding: 14px 14px;
+	padding: 14px 14px;
 	font: inherit;
 	line-height: 18px;
 	color: #a1a1a1;
@@ -1398,21 +1406,21 @@ html {
 }
 
 .contactus-form input[type=text]:focus {
-    border-color: #000000;
-    color: #000000;
+	border-color: #000000;
+	color: #000000;
 }
 
 .contactus-form input[type=text]:hover {
-    border-color: #b4b9bb;
+	border-color: #b4b9bb;
 }
 
 .contactus-form textarea:focus {
-    border-color: #000000;
-    color: #000000;
+	border-color: #000000;
+	color: #000000;
 }
 
 .contactus-form textarea:hover {
-    border-color: #b4b9bb;
+	border-color: #b4b9bb;
 }
 
 .contactus-form-sender-contacts {

@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-  	<head>
-    	<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
-        <link rel="stylesheet" href="css/style.css">
-    	<title>Нёрдс</title>
-  	</head>
-	<body>
-		<header class="main-header">
-			<div class="container">
+        <link rel="stylesheet" href="css/style-min.css">
+        <title>Нёрдс</title>
+    </head>
+    <body>
+    <header class="main-header">
+            <div class="container">
                 <div class="main-header-top clearfix">
-				    <div class="index-logo">
-					   <a href="./././index.html"><img src="img/main-logo.png" width="161" height="65" alt="Нердс"></a>
-				    </div>
-				    <nav class="main-navigation">
-					    <ul class="main-navigation-items">
-					        <li>
-						       <a href="#">Студия</a>
-						    </li>
-						    <li>
-							    <a href="#">Клиенты</a>
-						    </li>
-						    <li>
-							    <a class="active-page" href="#">Магазин</a>
-						    </li>
-						    <li>
-							    <a href="#">Контакты</a>
-						    </li>
+                    <div class="index-logo">
+                        <a href="./././index.html"><img src="img/main-logo.png" width="161" height="65" alt="Нердс"></a>
+                    </div>
+                    <nav class="main-navigation">
+                        <ul class="main-navigation-items">
+                            <li>
+                                <a href="#">Студия</a>
+                            </li>
+                            <li>
+                                <a href="#">Клиенты</a>
+                            </li>
+                            <li>
+                                <a class="active-page" href="#">Магазин</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
                         </ul>
- 				   </nav>
- 				   <div class="user-block">
+                    </nav>
+                    <div class="user-block">
                         <a class="shopping-cart" href="#">Корзина</a>
                     </div>
                 </div>
                 <div class="header-title">
-				    <h1 class="header-shop-title">Магазин готовых шаблонов</h1>
+                    <h1 class="header-shop-title">Магазин готовых шаблонов</h1>
                 </div>
             </div>
         </header>
@@ -67,38 +67,38 @@
                         <div class="html-arrangement-type">
                             <h2 class="html-arrangement-typ-title">Сетка:</h2>
                             <div class="arrangement-type-options">
-                                <input id="arrangement-type-responsive" type="radio" name="arrangement-type-item" value="responsive" checked hidden>
+                                <input class="arrangement-type-radio" id="arrangement-type-responsive" type="radio" name="arrangement-type-item" value="responsive" checked hidden>
                                 <label for="arrangement-type-responsive">Адаптивная</label>
                             </div>
                             <div class="arrangement-type-options">
-                                <input id="arrangement-type-fixed" type="radio" name="arrangement-type-item" value="fixed" disabled hidden>
+                                <input class="arrangement-type-radio" id="arrangement-type-fixed" type="radio" name="arrangement-type-item" value="fixed" disabled hidden>
                                 <label for="arrangement-type-fixed">Фиксированная</label> 
                             </div>
                             <div class="arrangement-type-options">
-                                <input id="arrangement-type-flexible" type="radio" name="arrangement-type-item" value="flexible" hidden>
+                                <input class="arrangement-type-radio" id="arrangement-type-flexible" type="radio" name="arrangement-type-item" value="flexible" hidden>
                                 <label for="arrangement-type-flexible">Резиновая</label>
                             </div>
                         </div>
                         <div class="product-features-container">
                             <h2 class="product-features-container-title">Особенности:</h2>
                             <div class="product-features-options">
-                                <input name="product-checking" id="product-feature-slider" type="checkbox" checked hidden>
+                                <input class="product-features-checkbox" name="product-checking" id="product-feature-slider" type="checkbox" checked hidden>
                                 <label for="product-feature-slider">Слайдер</label>
                             </div>
                             <div class="product-features-options">
-                                <input id="product-feature-adv" name="product-checking" type="checkbox" disabled="" hidden>
+                                <input class="product-features-checkbox" id="product-feature-adv" name="product-checking" type="checkbox" disabled="" hidden>
                                 <label for="product-feature-adv">Блок преимуществ</label>
                             </div>
                             <div class="product-features-options">
-                                <input id="product-feature-news" name="product-checking" type="checkbox" checked hidden>
+                                <input class="product-features-checkbox" id="product-feature-news" name="product-checking" type="checkbox" checked hidden>
                                 <label for="product-feature-news">Новости</label>
                             </div>
                             <div class="product-features-options">
-                                <input id="product-feature-gallery" name="product-checking" type="checkbox" hidden>
+                                <input class="product-features-checkbox" id="product-feature-gallery" name="product-checking" type="checkbox" hidden>
                                 <label for="product-feature-gallery">Галерея</label>
                             </div>
                             <div class="product-features-options">
-                                <input id="product-feature-cart" name="product-checking" type="checkbox" hidden>
+                                <input class="product-features-checkbox" id="product-feature-cart" name="product-checking" type="checkbox" hidden>
                                 <label for="product-feature-cart">Корзина</label>
                             </div>
                         </div>
@@ -255,8 +255,8 @@
                 </div>
             </div>
         </main>
-        <div class="map"> 
-            <div class="container">  
+        <div class="map">
+            <div class="container">
                 <div class="contacts">
                     <span>NЁRDS DESIGN STUDIO</span>
                     <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -266,7 +266,7 @@
             </div>
         </div>
         <footer class="main-footer">
-            <div class="container">
+            <div class="container clearfix">
                 <section class="footer-social">
                     <a class="social-btn social-btn-vk" href="#">Vkontakte</a>
                     <a class="social-btn social-btn-fb" href="#">Facebook</a>
@@ -277,17 +277,17 @@
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </section>
             </div>
-        </footer> <!--
-         <div class="modal-content">  
+        </footer>
+        <div class="modal-content">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
             <h2 class="model-content-title">Напишите нам</h2>
             <form class="contactus-form" action="#" method="post">
                 <div class="contactus-form-sender-contacts clearfix">
-                    <div class="contactus-form-sender-name">                
+                    <div class="contactus-form-sender-name">
                         <label for="sender-name">Ваше имя:</label>
                         <input id="sender-name" type="text" name="sender-name-field" placeholder="Представьтесь, пожалуйста">
                     </div>
-                    <div class="contactus-form-sender-email">             
+                    <div class="contactus-form-sender-email">
                         <label for="sender-email">Ваш e-mail:</label>
                         <input id="sender-email" type="text" name="sender-email-field" placeholder="Для отправки ответа">
                     </div> 
@@ -298,9 +298,6 @@
                 </div>
                 <button class="btn btn-text-send" type="submit">Отправить</button>
             </form>   
-        </div> -->
+        </div>
     </body>
 </html>
-
-
-				 
