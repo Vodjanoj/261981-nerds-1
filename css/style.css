@@ -253,7 +253,7 @@ html {
 .company-achievements .company-achievements-title {
 	display: block;
 	padding-top: 30px;
-	padding-left: 16px; 
+	text-align: center;
 	margin-bottom: 41px;
 	text-transform: uppercase;
 	font-weight: 700; 
